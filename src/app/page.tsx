@@ -831,6 +831,80 @@ const leadership2025: LeadershipPerson[] = [
 ];
 
 /* ------------------------------------------------------------------ */
+/*  2026–2027 season: theme structure + fall schedule                  */
+/* ------------------------------------------------------------------ */
+
+interface SeasonTheme {
+  title: string;
+  when: string;
+  lead: string;
+  body: string;
+  icon: string;
+}
+
+const seasonThemes: SeasonTheme[] = [
+  {
+    title: "Agentic AI: Fundamentals & Applications",
+    when: "Fall 2026",
+    lead: "Ce Sui",
+    body: "The core track of the fall: what LLM agents are and how to work with them — hands-on sessions on agentic coding and research tools, transformers and pre-training, finetuning and reinforcement learning, retrieval and memory, tool use and MCP, multi-agent orchestration, interpretability, and ethics.",
+    icon: "M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.456-2.456L14.25 6l1.035-.259a3.375 3.375 0 002.456-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z",
+  },
+  {
+    title: "AI for Scientific Instrumentation",
+    when: "Winter–Spring 2027",
+    lead: "Artem Poliszczuk",
+    body: "Cross-disciplinary AI in the lab and in flight: edge AI and fast ML for scientific detectors, radiation-tolerant computing for space, ML for detector and optics design, algorithm–hardware co-design, neuromorphic computing, and autonomous robotics for NASA missions.",
+    icon: "M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9",
+  },
+  {
+    title: "AI Policy & Collaboration",
+    when: "Winter–Spring 2027",
+    lead: "Julie Rolla",
+    body: "The ecosystem around the science: funding opportunities and grant strategy, NSF and NSF–Simons AI institutes, private funders, ethics and reproducibility of the scientific method, AI pedagogy, and the national AI policy landscape.",
+    icon: "M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z",
+  },
+  {
+    title: "AI for Surveys & NASA Missions",
+    when: "Winter–Spring 2027",
+    lead: "Tri Nguyen",
+    body: "AI for Roman, Rubin, and the missions ahead: foundation models for survey science, applications to survey science and operations, robust and interpretable methods at scale, and AI for HWO and planetary science.",
+    icon: "M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z",
+  },
+  {
+    title: "Town Halls & Interactive Sessions",
+    when: "Throughout the year",
+    lead: "Jay Wadekar",
+    body: "Community-driven formats: town halls pairing contrasting views on the pros and cons of AI in research, and interactive working sessions on how to approach and carry out research with AI.",
+    icon: "M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z",
+  },
+];
+
+interface SeasonSession {
+  date: string;
+  topic: string;
+  speaker?: string;
+  affiliation?: string;
+}
+
+const fall2026: SeasonSession[] = [
+  { date: "Sep 14", topic: "Foundations of LLM agents and state of the art", speaker: "Josh Speagle", affiliation: "University of Toronto" },
+  { date: "Sep 21", topic: "Hands-on session I: agentic coding and research tools", speaker: "Christopher Stubbs", affiliation: "Harvard University" },
+  { date: "Sep 28", topic: "Hands-on session II: agentic coding and research tools", speaker: "Serat Saad", affiliation: "The Ohio State University" },
+  { date: "Oct 5", topic: "Transformers, attention, and pre-training", speaker: "Josh Nguyen", affiliation: "University of Pennsylvania" },
+  { date: "Oct 12", topic: "No meeting" },
+  { date: "Oct 19", topic: "Finetuning and reinforcement learning", speaker: "Moritz Münchmeyer", affiliation: "University of Wisconsin–Madison" },
+  { date: "Oct 26", topic: "Retrieval and memory (RAG and beyond)", speaker: "Daniel Khashabi", affiliation: "Johns Hopkins University" },
+  { date: "Nov 2", topic: "Tool use and MCP", speaker: "Adam Moss", affiliation: "University of Nottingham" },
+  { date: "Nov 9", topic: "Skills for domains", speaker: "Kelle Cruz", affiliation: "Hunter College, CUNY" },
+  { date: "Nov 16", topic: "Multi-agent systems and orchestration", speaker: "Boris Bolliet", affiliation: "University of Cambridge" },
+  { date: "Nov 23", topic: "No meeting" },
+  { date: "Nov 30", topic: "Ethics and challenges of agentic AI", speaker: "Paul Ginsparg", affiliation: "Cornell University" },
+  { date: "Dec 7", topic: "Mechanistic interpretability", speaker: "Chirag Modi", affiliation: "New York University" },
+  { date: "Dec 14", topic: "Town hall & interactive session", speaker: "David Hogg & Ben Wandelt", affiliation: "NYU & Johns Hopkins University" },
+];
+
+/* ------------------------------------------------------------------ */
 /*  Helper                                                             */
 /* ------------------------------------------------------------------ */
 
@@ -919,6 +993,7 @@ function Navigation() {
 
   const navItems = [
     { label: "About", href: "about" },
+    { label: "Schedule", href: "schedule" },
     { label: "Textbook", href: "textbook" },
     { label: "Curriculum", href: "curriculum" },
     { label: "Team", href: "leadership" },
@@ -1007,7 +1082,7 @@ function HeroSection() {
             <span className="font-display text-xs font-bold uppercase tracking-[0.22em] text-green-light">Cosmic Origins Program</span>
             <span className="inline-flex items-center gap-2 rounded-full border border-green-light/25 bg-green-light/10 px-3 py-1 font-display text-[11px] font-semibold uppercase tracking-wider text-green-light">
               <span className="h-1.5 w-1.5 rounded-full bg-green-light" />
-              2026–2027 planning underway
+              Fall 2026 schedule announced
             </span>
           </div>
           <h1 className="font-display text-4xl md:text-6xl font-bold text-white mt-6 mb-6 tracking-tight leading-[1.04]">
@@ -1018,12 +1093,14 @@ function HeroSection() {
             bite-sized modular training designed for the astronomy community.
           </p>
           <p className="-mt-4 mb-9 max-w-2xl font-display text-sm font-semibold text-white/80">
-            Weekly sessions resume Monday, September 14, 2026 at 4:00 PM ET.
-            Topics and speakers will be announced as they are confirmed.
+            Year two puts agentic AI at the center — hands-on agent workflows and
+            the research frontier — then broadens cross-disciplinary, to AI for
+            instrumentation, policy, and NASA missions and surveys. Weekly
+            sessions resume Monday, September 14, 2026 at 4:00 PM ET.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#curriculum" className="btn-primary">Browse all lectures</a>
-            <a href="#participate" className="btn-on-dark">Join the community</a>
+            <a href="#schedule" className="btn-primary">View the fall schedule</a>
+            <a href="#curriculum" className="btn-on-dark">Browse all lectures</a>
           </div>
 
           <div className="mt-12 flex flex-wrap gap-x-10 gap-y-5 border-t border-white/10 pt-7">
@@ -1115,6 +1192,85 @@ function ValuePropBand() {
               </a>
             </div>
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  2026–2027 season — direction themes + fall schedule                */
+/* ------------------------------------------------------------------ */
+
+function SeasonSection() {
+  return (
+    <section id="schedule" className="py-24 relative bg-sand/60">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-3xl mb-12">
+          <span className="eyebrow">2026–2027 Series</span>
+          <h2 className="section-title mt-3 mb-5">From foundations to agentic, cross-disciplinary AI</h2>
+          <p className="text-lg text-ink/70 leading-relaxed">
+            After a foundational first year, the new season puts <strong>agentic AI</strong> at the
+            center: hands-on sessions with agentic coding and research tools, the techniques behind
+            modern agents, and the questions they raise for science. The series then broadens
+            cross-disciplinary — <strong>AI for scientific instrumentation</strong>,{" "}
+            <strong>AI policy and collaboration</strong>, and <strong>AI for astronomical surveys
+            and NASA missions</strong> — before closing the year with community town halls.
+          </p>
+        </div>
+
+        {/* Theme cards */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-14">
+          {seasonThemes.map((t) => (
+            <div key={t.title} className="card card-hover p-6 flex flex-col">
+              <div className="flex items-center justify-between gap-3 mb-4">
+                <span className="w-10 h-10 rounded-lg bg-green/10 text-green flex items-center justify-center shrink-0">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d={t.icon} /></svg>
+                </span>
+                <span className="text-[11px] font-display font-semibold uppercase tracking-wider text-ink/50 bg-ink/5 border border-ink/10 rounded-full px-2.5 py-1 text-right">{t.when}</span>
+              </div>
+              <h3 className="font-display text-lg font-bold text-ink leading-snug mb-2">{t.title}</h3>
+              <p className="text-sm text-ink/65 leading-relaxed">{t.body}</p>
+              <span className="mt-4 pt-4 border-t border-black/5 text-xs font-medium text-ink/45">Theme lead: {t.lead}</span>
+            </div>
+          ))}
+
+          {/* Community card fills the grid and invites input on the rest of the year */}
+          <div className="rounded-2xl border border-dashed border-green/40 bg-green/5 p-6 flex flex-col justify-center">
+            <h3 className="font-display text-lg font-bold text-ink leading-snug mb-2">Suggest a speaker or topic</h3>
+            <p className="text-sm text-ink/65 leading-relaxed mb-5">
+              The winter–spring 2027 program is still taking shape. Join the community and help
+              shape the series.
+            </p>
+            <a href="mailto:AI-ML-STIG-join@lists.nasa.gov?subject=Join" className="btn-primary self-start px-5 py-2.5 text-sm">Join the community</a>
+          </div>
+        </div>
+
+        {/* Fall 2026 schedule */}
+        <div className="rounded-2xl bg-deep overflow-hidden shadow-[var(--shadow-card-hover)]">
+          <div className="px-6 md:px-8 py-6 border-b border-white/10">
+            <span className="font-display text-xs font-bold uppercase tracking-[0.18em] text-green-light">Fall 2026 schedule</span>
+            <h3 className="font-display text-xl md:text-2xl font-bold text-white mt-1">Mondays · 4:00 PM ET · Remote</h3>
+          </div>
+          <ul className="divide-y divide-white/5">
+            {fall2026.map((s) => (
+              <li key={s.date} className={`flex items-center gap-4 md:gap-6 px-6 md:px-8 py-3.5 ${!s.speaker ? "opacity-45" : ""}`}>
+                <span className="w-16 shrink-0 font-display text-sm font-semibold text-green-light">{s.date}</span>
+                <div className="min-w-0 flex-1">
+                  <span className={`font-display font-semibold leading-snug ${!s.speaker ? "italic font-normal text-white/70" : "text-white"}`}>{s.topic}</span>
+                  {s.speaker && (
+                    <span className="block text-sm text-white/55 mt-0.5">
+                      {s.speaker}{s.affiliation ? ` · ${s.affiliation}` : ""}
+                    </span>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
+          <div className="px-6 md:px-8 py-5 bg-white/[0.03] border-t border-white/10 text-sm text-white/55">
+            Winter–spring 2027 — instrumentation, policy, surveys &amp; missions, and town halls —
+            will be announced as speakers confirm.
+          </div>
         </div>
       </div>
     </section>
@@ -1403,7 +1559,8 @@ function CurriculumLibrary() {
           <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-white mt-3 mb-4">Explore the growing lecture library</h2>
           <p className="text-lg text-white/65 max-w-3xl mx-auto leading-relaxed">
             One continuous collection of recordings, summaries, and materials from the STIG lecture series.
-            New 2026–2027 lectures will be added here as the program is confirmed.
+            Lectures from the 2026–2027 season will be added here as they take place —{" "}
+            <a href="#schedule" className="text-green-light hover:text-green-light/80 font-medium underline underline-offset-4 decoration-green-light/40">see the fall 2026 schedule</a>.
           </p>
         </div>
 
@@ -1727,7 +1884,7 @@ function ParticipateSection() {
       tab: "Weekly meetings",
       tag: "Live · Mondays",
       title: "Join the weekly meeting",
-      body: "The 2026–2027 series begins Monday, September 14, 2026. Sessions run remotely on Mondays at 4:00 PM ET. Join live to ask questions and help shape the discussion as the series unfolds.",
+      body: "The 2026–2027 series begins Monday, September 14, 2026, with a fall focused on agentic AI and weekly sessions through mid-December. Sessions run remotely on Mondays at 4:00 PM ET — join live to ask questions and help shape the discussion.",
       image: "participate-async.jpg",
       cta: { label: "NASA AI/ML STIG page", href: "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/artificial-intelligence-machine-learning-science-technology-interest-group-ai-ml-stig/" },
     },
@@ -1793,8 +1950,8 @@ function ParticipateSection() {
 function Footer() {
   const cols = [
     { title: "Program", links: [
-      { label: "About", href: "#about" }, { label: "Curriculum", href: "#curriculum" },
-      { label: "Lectures", href: "#curriculum" }, { label: "Team", href: "#leadership" },
+      { label: "About", href: "#about" }, { label: "Fall 2026 Schedule", href: "#schedule" },
+      { label: "Curriculum", href: "#curriculum" }, { label: "Team", href: "#leadership" },
     ] },
     { title: "Materials", links: [
       { label: "Textbook", href: "https://deeplearning4astro.com" },
@@ -1879,6 +2036,7 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <ValuePropBand />
+      <SeasonSection />
       <TextbookFeature />
       <TabbedShowcase />
       <CurriculumLibrary />
