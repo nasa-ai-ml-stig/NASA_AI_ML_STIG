@@ -879,6 +879,7 @@ interface SeasonSession {
   topic: string;
   speaker?: string;
   affiliation?: string;
+  noMeeting?: boolean;
 }
 
 const fall2026: SeasonSession[] = [
@@ -886,16 +887,16 @@ const fall2026: SeasonSession[] = [
   { date: "Sep 21", topic: "Hands-on session I: agentic coding and research tools", speaker: "Christopher Stubbs", affiliation: "Harvard University" },
   { date: "Sep 28", topic: "Hands-on session II: agentic coding and research tools", speaker: "Serat Saad", affiliation: "The Ohio State University" },
   { date: "Oct 5", topic: "Transformers, attention, and pre-training", speaker: "Josh Nguyen", affiliation: "University of Pennsylvania" },
-  { date: "Oct 12", topic: "No meeting" },
+  { date: "Oct 12", topic: "No meeting", noMeeting: true },
   { date: "Oct 19", topic: "Finetuning and reinforcement learning", speaker: "Moritz Münchmeyer", affiliation: "University of Wisconsin–Madison" },
-  { date: "Oct 26", topic: "Retrieval and memory (RAG and beyond)", speaker: "Daniel Khashabi", affiliation: "Johns Hopkins University" },
-  { date: "Nov 2", topic: "Tool use and MCP", speaker: "Adam Moss", affiliation: "University of Nottingham" },
+  { date: "Oct 26", topic: "Retrieval and memory (RAG and beyond)" },
+  { date: "Nov 2", topic: "Tool use and MCP" },
   { date: "Nov 9", topic: "Skills for domains", speaker: "Kelle Cruz", affiliation: "Hunter College, CUNY" },
   { date: "Nov 16", topic: "Multi-agent systems and orchestration", speaker: "Boris Bolliet", affiliation: "University of Cambridge" },
-  { date: "Nov 23", topic: "No meeting" },
+  { date: "Nov 23", topic: "No meeting", noMeeting: true },
   { date: "Nov 30", topic: "Ethics and challenges of agentic AI", speaker: "Paul Ginsparg", affiliation: "Cornell University" },
-  { date: "Dec 7", topic: "Mechanistic interpretability", speaker: "Chirag Modi", affiliation: "New York University" },
-  { date: "Dec 14", topic: "Town hall & interactive session", speaker: "David Hogg & Ben Wandelt", affiliation: "NYU & Johns Hopkins University" },
+  { date: "Dec 7", topic: "Mechanistic interpretability" },
+  { date: "Dec 14", topic: "Town hall & interactive session" },
 ];
 
 /* ------------------------------------------------------------------ */
@@ -1247,13 +1248,13 @@ function SeasonSection() {
           </div>
           <ul className="divide-y divide-white/5">
             {fall2026.map((s) => (
-              <li key={s.date} className={`flex items-center gap-4 md:gap-6 px-6 md:px-8 py-3.5 ${!s.speaker ? "opacity-45" : ""}`}>
+              <li key={s.date} className={`flex items-center gap-4 md:gap-6 px-6 md:px-8 py-3.5 ${s.noMeeting ? "opacity-45" : ""}`}>
                 <span className="w-16 shrink-0 font-display text-sm font-semibold text-green-light">{s.date}</span>
                 <div className="min-w-0 flex-1">
-                  <span className={`font-display font-semibold leading-snug ${!s.speaker ? "italic font-normal text-white/70" : "text-white"}`}>{s.topic}</span>
-                  {s.speaker && (
-                    <span className="block text-sm text-white/55 mt-0.5">
-                      {s.speaker}{s.affiliation ? ` · ${s.affiliation}` : ""}
+                  <span className={`font-display font-semibold leading-snug ${s.noMeeting ? "italic font-normal text-white/70" : "text-white"}`}>{s.topic}</span>
+                  {!s.noMeeting && (
+                    <span className={`block text-sm mt-0.5 ${s.speaker ? "text-white/55" : "text-white/40 italic"}`}>
+                      {s.speaker ? `${s.speaker}${s.affiliation ? ` · ${s.affiliation}` : ""}` : "Speaker to be announced"}
                     </span>
                   )}
                 </div>
