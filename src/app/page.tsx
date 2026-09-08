@@ -1096,6 +1096,7 @@ function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="#schedule" className="btn-primary">View the fall schedule</a>
             <a href="#curriculum" className="btn-on-dark">Browse all lectures</a>
+            <a href={STIG_NASA_PAGE} target="_blank" rel="noopener noreferrer" className="btn-on-dark">Join the weekly meeting</a>
           </div>
 
           <div className="mt-12 flex flex-wrap gap-x-10 gap-y-5 border-t border-white/10 pt-7">
