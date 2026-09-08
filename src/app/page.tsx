@@ -837,7 +837,6 @@ const leadership2025: LeadershipPerson[] = [
 interface SeasonTheme {
   title: string;
   when: string;
-  lead: string;
   body: string;
   icon: string;
 }
@@ -846,35 +845,30 @@ const seasonThemes: SeasonTheme[] = [
   {
     title: "Agentic AI: Fundamentals & Applications",
     when: "Fall 2026",
-    lead: "Ce Sui",
     body: "The core track of the fall: what LLM agents are and how to work with them — hands-on sessions on agentic coding and research tools, transformers and pre-training, finetuning and reinforcement learning, retrieval and memory, tool use and MCP, multi-agent orchestration, interpretability, and ethics.",
     icon: "M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.456-2.456L14.25 6l1.035-.259a3.375 3.375 0 002.456-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z",
   },
   {
     title: "AI for Scientific Instrumentation",
     when: "Winter–Spring 2027",
-    lead: "Artem Poliszczuk",
     body: "Cross-disciplinary AI in the lab and in flight: edge AI and fast ML for scientific detectors, radiation-tolerant computing for space, ML for detector and optics design, algorithm–hardware co-design, neuromorphic computing, and autonomous robotics for NASA missions.",
     icon: "M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9",
   },
   {
     title: "AI Policy & Collaboration",
     when: "Winter–Spring 2027",
-    lead: "Julie Rolla",
     body: "The ecosystem around the science: funding opportunities and grant strategy, NSF and NSF–Simons AI institutes, private funders, ethics and reproducibility of the scientific method, AI pedagogy, and the national AI policy landscape.",
     icon: "M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z",
   },
   {
     title: "AI for Surveys & NASA Missions",
     when: "Winter–Spring 2027",
-    lead: "Tri Nguyen",
     body: "AI for Roman, Rubin, and the missions ahead: foundation models for survey science, applications to survey science and operations, robust and interpretable methods at scale, and AI for HWO and planetary science.",
     icon: "M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z",
   },
   {
     title: "Town Halls & Interactive Sessions",
     when: "Throughout the year",
-    lead: "Jay Wadekar",
     body: "Community-driven formats: town halls pairing contrasting views on the pros and cons of AI in research, and interactive working sessions on how to approach and carry out research with AI.",
     icon: "M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z",
   },
@@ -1231,7 +1225,6 @@ function SeasonSection() {
               </div>
               <h3 className="font-display text-lg font-bold text-ink leading-snug mb-2">{t.title}</h3>
               <p className="text-sm text-ink/65 leading-relaxed">{t.body}</p>
-              <span className="mt-4 pt-4 border-t border-black/5 text-xs font-medium text-ink/45">Theme lead: {t.lead}</span>
             </div>
           ))}
 
