@@ -111,11 +111,20 @@ def main():
     parser.add_argument("--file", type=Path, help="Video file to upload")
     parser.add_argument("--title", help="YouTube video title")
     parser.add_argument("--description", default="", help="YouTube video description")
+    parser.add_argument(
+        "--audited-project", action="store_true",
+        help="Confirm this Google API project passed YouTube's compliance audit",
+    )
     args = parser.parse_args()
     if not args.check_channel and (not args.file or not args.title):
         parser.error("--file and --title are required for upload")
     if args.file and not args.file.is_file():
         parser.error(f"Video file does not exist: {args.file}")
+    if not args.check_channel and not args.audited_project:
+        parser.error(
+            "YouTube locks uploads from unverified API projects as private. "
+            "Use --audited-project only after Google confirms the project passed its audit."
+        )
 
     youtube = authenticate()
     check_channel(youtube)
