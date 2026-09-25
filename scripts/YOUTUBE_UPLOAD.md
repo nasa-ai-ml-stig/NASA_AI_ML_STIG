@@ -36,7 +36,7 @@ For future recordings, test a short sample before using these settings; screen c
 ```bash
 .venv/bin/python scripts/upload_youtube.py \
   --file /Users/ysting/Stubbs_Lecture27_Agentic_Coding_STIG.mp4 \
-  --title "Lecture 27 - Agentic Coding and Generative AI Research Tools - Christopher Stubbs, Harvard" \
+  --title "Lecture 27 - Hands-on session I: agentic coding and research tools - Christopher Stubbs, Harvard" \
   --audited-project
 ```
 

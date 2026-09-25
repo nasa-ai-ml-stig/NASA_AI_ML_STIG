@@ -775,7 +775,7 @@ const lectures: Lecture[] = [
   },
   {
     number: 27,
-    title: "Agentic Coding and Generative AI Research Tools",
+    title: "Hands-on session I: agentic coding and research tools",
     speaker: "Christopher Stubbs",
     affiliation: "Harvard University",
     description:
@@ -846,7 +846,7 @@ const schedule: ScheduleEntry[] = [
   { week: 25, date: "Jun 29, 4 pm ET", topic: "Open Science and AI at NASA", speaker: "Steve Crawford, NASA SMD OCSDO" },
   { module: "Module 9: Agentic AI (2026–2027 Series)" },
   { week: 26, date: "Sep 14", topic: "Foundations of LLM agents and state of the art", speaker: "Josh Speagle, U. of Toronto" },
-  { week: 27, date: "Sep 21", topic: "Agentic Coding and Generative AI Research Tools", speaker: "Christopher Stubbs, Harvard" },
+  { week: 27, date: "Sep 21", topic: "Hands-on session I: agentic coding and research tools", speaker: "Christopher Stubbs, Harvard" },
 ];
 
 interface LeadershipPerson {
@@ -953,7 +953,7 @@ const fall2026: SeasonSession[] = [
   },
   {
     date: "Sep 21",
-    topic: "Agentic Coding and Generative AI Research Tools",
+    topic: "Hands-on session I: agentic coding and research tools",
     speaker: "Christopher Stubbs",
     affiliation: "Harvard University",
     links: [
