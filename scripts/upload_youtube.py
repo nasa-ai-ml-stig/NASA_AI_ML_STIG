@@ -15,11 +15,9 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
 
-SCOPES = [
-    "https://www.googleapis.com/auth/youtube.upload",
-    "https://www.googleapis.com/auth/youtube.readonly",
-]
+SCOPES = ["https://www.googleapis.com/auth/youtube.force-ssl"]
 EXPECTED_CHANNEL_ID = "UCyvdQYqMoApBldvuj0OIRaA"
+PLAYLIST_ID = "PLo4wAAMJnA1yy6wqbz5-ptwp72k4wyKEJ"
 CONFIG_DIR = Path.home() / ".config" / "nasa-ai-ml-stig"
 CLIENT_FILE = CONFIG_DIR / "youtube-client.json"
 TOKEN_FILE = CONFIG_DIR / "youtube-token.json"
@@ -103,6 +101,15 @@ def upload(youtube, args):
         "privacyStatus": privacy,
     }, indent=2) + "\n")
     os.chmod(receipt, 0o600)
+    if privacy == "unlisted":
+        youtube.playlistItems().insert(
+            part="snippet",
+            body={"snippet": {
+                "playlistId": PLAYLIST_ID,
+                "resourceId": {"kind": "youtube#video", "videoId": video_id},
+            }},
+        ).execute()
+        print("Added to NASA AI/ML Science and Technology Interest Group playlist")
 
 
 def main():

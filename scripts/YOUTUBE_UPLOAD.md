@@ -5,7 +5,7 @@
 ## One-time Google setup
 
 1. Sign in as `ting.yuansen.astro@gmail.com` at [Google Cloud Console](https://console.cloud.google.com/) and select or create a personal project for STIG uploads. Enable **YouTube Data API v3** in **APIs & Services > Library**.
-2. In **Google Auth platform > Branding**, configure an app name such as “NASA AI/ML STIG uploader.” Under **Audience**, choose **External** and add `ting.yuansen.astro@gmail.com` as a test user. Under **Data Access**, include the `youtube.upload` and `youtube.readonly` scopes.
+2. In **Google Auth platform > Branding**, configure an app name such as “NASA AI/ML STIG uploader.” Under **Audience**, choose **External** and add `ting.yuansen.astro@gmail.com` as a test user. Under **Data Access**, include the `youtube.force-ssl` scope. It permits uploading and adding the video to the existing STIG playlist.
 3. In **Google Auth platform > Clients**, create an OAuth client of type **Desktop app**. Download its JSON file and save it as `~/.config/nasa-ai-ml-stig/youtube-client.json`. Keep this file and the generated token private; do not commit them.
 4. Install the Python dependencies and run the channel check:
 
@@ -36,11 +36,11 @@ For future recordings, test a short sample before using these settings; screen c
 ```bash
 .venv/bin/python scripts/upload_youtube.py \
   --file /Users/ysting/Stubbs_Lecture27_Agentic_Coding_STIG.mp4 \
-  --title "Lecture 27 - Agentic Coding and Generative AI Research Tools - Christopher Stubbs, Harvard University" \
+  --title "Lecture 27 - Agentic Coding and Generative AI Research Tools - Christopher Stubbs (Harvard University)" \
   --audited-project
 ```
 
-The command requests **unlisted** visibility to match the earlier lectures and prints the actual visibility and video URL. The earlier uploads have empty descriptions and YouTube category 22; this command follows that pattern. Keep the receipt in `~/.config/nasa-ai-ml-stig/` so the video ID is available for updating the website.
+The command requests **unlisted** visibility to match the earlier lectures, adds the video to the STIG playlist, and prints the actual visibility and video URL. The earlier uploads have empty descriptions and YouTube category 22; this command follows that pattern. Keep the receipt in `~/.config/nasa-ai-ml-stig/` so the video ID is available for updating the website.
 
 **YouTube restriction:** Uploads made through an unverified API project created after July 28, 2020 are locked **private**. That state cannot be changed to unlisted in Studio; the video must be re-uploaded through YouTube's site or a verified API project. The uploader therefore requires `--audited-project` before sending video bytes. Complete [YouTube's API compliance audit](https://developers.google.com/youtube/v3/docs/videos/insert) before using the upload command. Until then, upload the compact MP4 through YouTube Studio to get an unlisted lecture link.
 
