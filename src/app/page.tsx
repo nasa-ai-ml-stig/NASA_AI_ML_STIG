@@ -787,6 +787,7 @@ const lectures: Lecture[] = [
       "AI-assisted coding in Colab, Jupyter, and local environments",
       "Cloud and local architectures for AI-assisted research",
     ],
+    youtube: "blTH7knEn4E",
     links: [
       {
         label: "View Slides (PDF)",
@@ -952,10 +953,14 @@ const fall2026: SeasonSession[] = [
   },
   {
     date: "Sep 21",
-    topic: "Hands-on session I: agentic coding and research tools",
+    topic: "Agentic Coding and Generative AI Research Tools",
     speaker: "Christopher Stubbs",
     affiliation: "Harvard University",
     links: [
+      {
+        label: "Watch Recording",
+        href: "https://youtu.be/blTH7knEn4E",
+      },
       {
         label: "View Slides (PDF)",
         href: `${BASE_PATH}/Resources/Lecture27_Christopher_Stubbs/Agentic_Coding_and_Generative_AI_Research_Tools_STIG.pdf`,
