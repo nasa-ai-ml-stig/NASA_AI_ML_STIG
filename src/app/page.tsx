@@ -773,6 +773,27 @@ const lectures: Lecture[] = [
       },
     ],
   },
+  {
+    number: 27,
+    title: "Agentic Coding and Generative AI Research Tools",
+    speaker: "Christopher Stubbs",
+    affiliation: "Harvard University",
+    description:
+      "A practical introduction to generative AI in research, from brainstorming and data exploration to code generation and debugging. Compares cloud notebooks, local notebooks, and agentic coding tools, and discusses verification, disclosure, research integrity, and the limits of current workflows.",
+    topics: [
+      "Research uses for generative AI and agentic coding",
+      "Domain expertise, validation, and reproducibility",
+      "Transparency, disclosure, and responsible use",
+      "AI-assisted coding in Colab, Jupyter, and local environments",
+      "Cloud and local architectures for AI-assisted research",
+    ],
+    links: [
+      {
+        label: "View Lecture Notes (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture27_Christopher_Stubbs/Agentic_Coding_and_Generative_AI_Research_Tools_STIG.pdf`,
+      },
+    ],
+  },
 ];
 
 interface ScheduleRow {
@@ -824,6 +845,7 @@ const schedule: ScheduleEntry[] = [
   { week: 25, date: "Jun 29, 4 pm ET", topic: "Open Science and AI at NASA", speaker: "Steve Crawford, NASA SMD OCSDO" },
   { module: "Module 9: Agentic AI (2026–2027 Series)" },
   { week: 26, date: "Sep 14", topic: "Foundations of LLM agents and state of the art", speaker: "Josh Speagle, U. of Toronto" },
+  { week: 27, date: "Sep 21", topic: "Agentic Coding and Generative AI Research Tools", speaker: "Christopher Stubbs, Harvard" },
 ];
 
 interface LeadershipPerson {
@@ -928,7 +950,18 @@ const fall2026: SeasonSession[] = [
       },
     ],
   },
-  { date: "Sep 21", topic: "Hands-on session I: agentic coding and research tools", speaker: "Christopher Stubbs", affiliation: "Harvard University" },
+  {
+    date: "Sep 21",
+    topic: "Hands-on session I: agentic coding and research tools",
+    speaker: "Christopher Stubbs",
+    affiliation: "Harvard University",
+    links: [
+      {
+        label: "View Lecture Notes (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture27_Christopher_Stubbs/Agentic_Coding_and_Generative_AI_Research_Tools_STIG.pdf`,
+      },
+    ],
+  },
   { date: "Sep 28", topic: "Hands-on session II: agentic coding and research tools", speaker: "Serat Saad", affiliation: "The Ohio State University" },
   { date: "Oct 5", topic: "Transformers, attention, and pre-training", speaker: "Josh Nguyen", affiliation: "University of Pennsylvania" },
   { date: "Oct 12", topic: "No meeting", noMeeting: true },
