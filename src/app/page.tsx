@@ -789,7 +789,7 @@ const lectures: Lecture[] = [
     ],
     links: [
       {
-        label: "View Lecture Notes (PDF)",
+        label: "View Slides (PDF)",
         href: `${BASE_PATH}/Resources/Lecture27_Christopher_Stubbs/Agentic_Coding_and_Generative_AI_Research_Tools_STIG.pdf`,
       },
     ],
@@ -957,7 +957,7 @@ const fall2026: SeasonSession[] = [
     affiliation: "Harvard University",
     links: [
       {
-        label: "View Lecture Notes (PDF)",
+        label: "View Slides (PDF)",
         href: `${BASE_PATH}/Resources/Lecture27_Christopher_Stubbs/Agentic_Coding_and_Generative_AI_Research_Tools_STIG.pdf`,
       },
     ],
