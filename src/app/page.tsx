@@ -795,6 +795,27 @@ const lectures: Lecture[] = [
       },
     ],
   },
+  {
+    number: 28,
+    title: "Hands-on session II: agentic coding and research tools",
+    speaker: "Serat Saad",
+    affiliation: "The Ohio State University",
+    description:
+      "A hands-on follow-on to session I, moving from generative writing to agentic choice: how a language model works by writing one word at a time, and how the same machinery becomes an agent that instead chooses from an action space. Introduces JEV, a System 1 agent that operates web browsers online, with use cases on astronomy websites — galaxies and spectra — and a live walkthrough of the website and how the agent was built.",
+    topics: [
+      "How a language model works: writing one word at a time",
+      "System 1 agents: choosing from an action space",
+      "JEV: a System 1 agent for web browsers, online",
+      "Use cases: astronomy websites, galaxies, and spectra",
+      "Live demo: the website, and how this was built",
+    ],
+    links: [
+      {
+        label: "View Slides (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture28_Serat_Saad/Agentic_Coding_and_Research_Tools_STIG.pdf`,
+      },
+    ],
+  },
 ];
 
 interface ScheduleRow {
@@ -847,6 +868,7 @@ const schedule: ScheduleEntry[] = [
   { module: "Module 9: Agentic AI (2026–2027 Series)" },
   { week: 26, date: "Sep 14", topic: "Foundations of LLM agents and state of the art", speaker: "Josh Speagle, U. of Toronto" },
   { week: 27, date: "Sep 21", topic: "Hands-on session I: agentic coding and research tools", speaker: "Christopher Stubbs, Harvard" },
+  { week: 28, date: "Sep 28", topic: "Hands-on session II: agentic coding and research tools", speaker: "Serat Saad, OSU" },
 ];
 
 interface LeadershipPerson {
@@ -967,7 +989,18 @@ const fall2026: SeasonSession[] = [
       },
     ],
   },
-  { date: "Sep 28", topic: "Hands-on session II: agentic coding and research tools", speaker: "Serat Saad", affiliation: "The Ohio State University" },
+  {
+    date: "Sep 28",
+    topic: "Hands-on session II: agentic coding and research tools",
+    speaker: "Serat Saad",
+    affiliation: "The Ohio State University",
+    links: [
+      {
+        label: "View Slides (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture28_Serat_Saad/Agentic_Coding_and_Research_Tools_STIG.pdf`,
+      },
+    ],
+  },
   { date: "Oct 5", topic: "Transformers, attention, and pre-training", speaker: "Josh Nguyen", affiliation: "University of Pennsylvania" },
   { date: "Oct 12", topic: "No meeting", noMeeting: true },
   { date: "Oct 19", topic: "Finetuning and reinforcement learning", speaker: "Moritz Münchmeyer", affiliation: "University of Wisconsin–Madison" },
