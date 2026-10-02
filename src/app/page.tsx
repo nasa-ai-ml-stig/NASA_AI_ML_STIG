@@ -809,6 +809,7 @@ const lectures: Lecture[] = [
       "Use cases: astronomy websites, galaxies, and spectra",
       "Live demo: the website, and how this was built",
     ],
+    youtube: "0nOiLJVyPJ4",
     links: [
       {
         label: "View Slides (PDF)",
@@ -995,6 +996,10 @@ const fall2026: SeasonSession[] = [
     speaker: "Serat Saad",
     affiliation: "The Ohio State University",
     links: [
+      {
+        label: "Watch Recording",
+        href: "https://youtu.be/0nOiLJVyPJ4",
+      },
       {
         label: "View Slides (PDF)",
         href: `${BASE_PATH}/Resources/Lecture28_Serat_Saad/Agentic_Coding_and_Research_Tools_STIG.pdf`,
