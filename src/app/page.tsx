@@ -839,15 +839,7 @@ const lectures: Lecture[] = [
         href: `${BASE_PATH}/Resources/Lecture29_Josh_Nguyen/Transformers_Attention_and_Pretraining_STIG.pdf`,
       },
       {
-        label: "View Slides (Google Slides)",
-        href: "https://docs.google.com/presentation/d/1eh7yWdftx_fk9xLtUj3KXM2jMrybXobaF-2C12lYZTc/edit?usp=sharing",
-      },
-      {
-        label: "Open Notebook in Colab",
-        href: "https://colab.research.google.com/drive/1aqPoQRZQ8-P8mbHxopK7dFths2gNbupM?usp=sharing",
-      },
-      {
-        label: "View Notebook on GitHub",
+        label: "View/Download Notebook on GitHub",
         href: `${GITHUB_BASE}/Resources/Lecture29_Josh_Nguyen/Transformers_Attention_and_Pretraining_STIG.ipynb`,
       },
     ],
@@ -1053,15 +1045,7 @@ const fall2026: SeasonSession[] = [
         href: `${BASE_PATH}/Resources/Lecture29_Josh_Nguyen/Transformers_Attention_and_Pretraining_STIG.pdf`,
       },
       {
-        label: "View Slides (Google Slides)",
-        href: "https://docs.google.com/presentation/d/1eh7yWdftx_fk9xLtUj3KXM2jMrybXobaF-2C12lYZTc/edit?usp=sharing",
-      },
-      {
-        label: "Open Notebook in Colab",
-        href: "https://colab.research.google.com/drive/1aqPoQRZQ8-P8mbHxopK7dFths2gNbupM?usp=sharing",
-      },
-      {
-        label: "View Notebook on GitHub",
+        label: "View/Download Notebook on GitHub",
         href: `${GITHUB_BASE}/Resources/Lecture29_Josh_Nguyen/Transformers_Attention_and_Pretraining_STIG.ipynb`,
       },
     ],
