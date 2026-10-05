@@ -817,6 +817,41 @@ const lectures: Lecture[] = [
       },
     ],
   },
+  {
+    number: 29,
+    title: "Transformers, Attention, and Pre-training",
+    speaker: "Josh Nguyen",
+    affiliation: "University of Pennsylvania",
+    description:
+      "An introduction to pre-training language models, starting with tokenization, causal next-token prediction, likelihood, and perplexity. Explains how token embeddings, attention, and transformer blocks model context, then explores continual pre-training for astronomy with AstroLLaMA. The companion notebook walks through token likelihoods and perplexity using OLMo.",
+    topics: [
+      "Tokenization and causal language modeling",
+      "Likelihood, log-likelihood, and perplexity",
+      "From n-gram models to neural language models",
+      "Token embeddings, query-key-value attention, and transformer blocks",
+      "Pre-training and continual pre-training for astronomy with AstroLLaMA",
+      "Text generation, retrieval embeddings, and intrinsic versus extrinsic evaluation",
+      "Hands-on calculation of token likelihoods and perplexity with OLMo",
+    ],
+    links: [
+      {
+        label: "View Slides (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture29_Josh_Nguyen/Transformers_Attention_and_Pretraining_STIG.pdf`,
+      },
+      {
+        label: "View Slides (Google Slides)",
+        href: "https://docs.google.com/presentation/d/1eh7yWdftx_fk9xLtUj3KXM2jMrybXobaF-2C12lYZTc/edit?usp=sharing",
+      },
+      {
+        label: "Open Notebook in Colab",
+        href: "https://colab.research.google.com/drive/1aqPoQRZQ8-P8mbHxopK7dFths2gNbupM?usp=sharing",
+      },
+      {
+        label: "View Notebook on GitHub",
+        href: `${GITHUB_BASE}/Resources/Lecture29_Josh_Nguyen/Transformers_Attention_and_Pretraining_STIG.ipynb`,
+      },
+    ],
+  },
 ];
 
 interface ScheduleRow {
@@ -870,6 +905,7 @@ const schedule: ScheduleEntry[] = [
   { week: 26, date: "Sep 14", topic: "Foundations of LLM agents and state of the art", speaker: "Josh Speagle, U. of Toronto" },
   { week: 27, date: "Sep 21", topic: "Hands-on session I: agentic coding and research tools", speaker: "Christopher Stubbs, Harvard" },
   { week: 28, date: "Sep 28", topic: "Hands-on session II: agentic coding and research tools", speaker: "Serat Saad, OSU" },
+  { week: 29, date: "Oct 5", topic: "Transformers, attention, and pre-training", speaker: "Josh Nguyen, U. of Pennsylvania" },
 ];
 
 interface LeadershipPerson {
@@ -1006,7 +1042,30 @@ const fall2026: SeasonSession[] = [
       },
     ],
   },
-  { date: "Oct 5", topic: "Transformers, attention, and pre-training", speaker: "Josh Nguyen", affiliation: "University of Pennsylvania" },
+  {
+    date: "Oct 5",
+    topic: "Transformers, attention, and pre-training",
+    speaker: "Josh Nguyen",
+    affiliation: "University of Pennsylvania",
+    links: [
+      {
+        label: "View Slides (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture29_Josh_Nguyen/Transformers_Attention_and_Pretraining_STIG.pdf`,
+      },
+      {
+        label: "View Slides (Google Slides)",
+        href: "https://docs.google.com/presentation/d/1eh7yWdftx_fk9xLtUj3KXM2jMrybXobaF-2C12lYZTc/edit?usp=sharing",
+      },
+      {
+        label: "Open Notebook in Colab",
+        href: "https://colab.research.google.com/drive/1aqPoQRZQ8-P8mbHxopK7dFths2gNbupM?usp=sharing",
+      },
+      {
+        label: "View Notebook on GitHub",
+        href: `${GITHUB_BASE}/Resources/Lecture29_Josh_Nguyen/Transformers_Attention_and_Pretraining_STIG.ipynb`,
+      },
+    ],
+  },
   { date: "Oct 12", topic: "No meeting", noMeeting: true },
   { date: "Oct 19", topic: "Finetuning and reinforcement learning", speaker: "Moritz Münchmeyer", affiliation: "University of Wisconsin–Madison" },
   { date: "Oct 26", topic: "Retrieval and memory (RAG and beyond)" },
