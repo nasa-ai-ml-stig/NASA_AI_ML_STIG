@@ -844,6 +844,30 @@ const lectures: Lecture[] = [
       },
     ],
   },
+  {
+    number: 30,
+    title: "Fine-tuning, Reinforcement Learning, and Self-Learning",
+    speaker: "Moritz Münchmeyer",
+    affiliation: "University of Wisconsin–Madison",
+    description:
+      "How modern language models are trained after pre-training. Starts with supervised fine-tuning, where a model imitates expert solutions, then turns to reinforcement learning with verifiable rewards, where the model samples many answers and is reinforced for the ones that check out. Explains the GRPO algorithm used in recent reasoning models, reports experiments fine-tuning small open models on quantum field theory problems, and closes on self-learning: can a model improve by writing and solving its own practice problems from physics textbooks?",
+    topics: [
+      "The full training pipeline: pre-training, mid-training, fine-tuning, and reinforcement learning",
+      "Supervised fine-tuning: imitating expert solutions, and low-rank adaptation (LoRA)",
+      "Practical post-training tools: TRL, NeMo, Axolotl, and verl",
+      "Reinforcement learning with verifiable rewards (RLVR)",
+      "The GRPO algorithm behind recent reasoning models",
+      "Fine-tuning open models on automatically checkable physics problems",
+      "What fine-tuning versus reinforcement learning each generalize to",
+      "Self-learning: models that invent and solve their own practice problems",
+    ],
+    links: [
+      {
+        label: "View Slides (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture30_Moritz_Munchmeyer/Finetuning_Reinforcement_Learning_and_SelfLearning_STIG.pdf`,
+      },
+    ],
+  },
 ];
 
 interface ScheduleRow {
@@ -898,6 +922,7 @@ const schedule: ScheduleEntry[] = [
   { week: 27, date: "Sep 21", topic: "Hands-on session I: agentic coding and research tools", speaker: "Christopher Stubbs, Harvard" },
   { week: 28, date: "Sep 28", topic: "Hands-on session II: agentic coding and research tools", speaker: "Serat Saad, OSU" },
   { week: 29, date: "Oct 5", topic: "Transformers, attention, and pre-training", speaker: "Josh Nguyen, U. of Pennsylvania" },
+  { week: 30, date: "Oct 19", topic: "Finetuning and reinforcement learning", speaker: "Moritz Münchmeyer, U. of Wisconsin–Madison" },
 ];
 
 interface LeadershipPerson {
@@ -1051,7 +1076,18 @@ const fall2026: SeasonSession[] = [
     ],
   },
   { date: "Oct 12", topic: "No meeting", noMeeting: true },
-  { date: "Oct 19", topic: "Finetuning and reinforcement learning", speaker: "Moritz Münchmeyer", affiliation: "University of Wisconsin–Madison" },
+  {
+    date: "Oct 19",
+    topic: "Finetuning and reinforcement learning",
+    speaker: "Moritz Münchmeyer",
+    affiliation: "University of Wisconsin–Madison",
+    links: [
+      {
+        label: "View Slides (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture30_Moritz_Munchmeyer/Finetuning_Reinforcement_Learning_and_SelfLearning_STIG.pdf`,
+      },
+    ],
+  },
   { date: "Oct 26", topic: "Retrieval and memory (RAG and beyond)" },
   { date: "Nov 2", topic: "Tool use and MCP" },
   { date: "Nov 9", topic: "Skills for domains", speaker: "Kelle Cruz", affiliation: "Hunter College, CUNY" },
