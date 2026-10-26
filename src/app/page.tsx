@@ -382,7 +382,7 @@ const lectures: Lecture[] = [
     chapter: 9,
     title: "Equivariant Neural Networks",
     speaker: "Anna Scaife",
-    affiliation: "U. of Manchester",
+    affiliation: "University of Manchester",
     description:
       "The theoretical foundations of equivariant neural networks, distinguishing invariance from equivariance and showing why standard CNNs are translation-equivariant but fail under rotation and reflection. Introduces the group structures that describe geometric transformations in astronomical data and why enforced equivariance beats data augmentation.",
     topics: [
@@ -405,7 +405,7 @@ const lectures: Lecture[] = [
     chapter: 10,
     title: "Equivariant Neural Networks (Application)",
     speaker: "Anna Scaife",
-    affiliation: "U. of Manchester",
+    affiliation: "University of Manchester",
     description:
       "Turn equivariance theory into practice by building group-equivariant convolutional networks (G-CNNs) in PyTorch with the e2cnn library. Demonstrate programmatically that standard convolutions fail under rotation, then enforce rotational invariance through group pooling for classification.",
     topics: [
@@ -492,7 +492,7 @@ const lectures: Lecture[] = [
     chapter: 13,
     title: "Flow Matching",
     speaker: "Tomasz Rozanski",
-    affiliation: "ANU",
+    affiliation: "Australian National University",
     description:
       "Flow matching as the next step in generative modeling, unifying normalizing flows, diffusion, and continuous flows under a single “probability path” perspective. Master the Conditional Flow Matching objective to train vector fields without solving ODEs, and build models that generate Color-Magnitude Diagrams for single and parameter-conditioned stellar populations.",
     topics: [
@@ -524,7 +524,7 @@ const lectures: Lecture[] = [
     chapter: 14,
     title: "Simulation-Based Inference",
     speaker: "Tomasz Rozanski",
-    affiliation: "ANU",
+    affiliation: "Australian National University",
     description:
       "Simulation-Based Inference (SBI) uses neural networks to perform Bayesian inference when the likelihood is intractable but the forward model can be simulated. Walk through the end-to-end workflow, contrast Neural Posterior and Neural Likelihood Estimation, and apply NLE with MCMC to infer the age and metallicity of stellar populations from Color-Magnitude Diagrams.",
     topics: [
@@ -556,7 +556,7 @@ const lectures: Lecture[] = [
     chapter: 22,
     title: "AI and Scientific Publishing",
     speaker: "Licia Verde",
-    affiliation: "U. of Barcelona/JCAP",
+    affiliation: "University of Barcelona / JCAP",
     description:
       "Examines scientific publishing as an industry with specific incentive structures and shows how large language models have disrupted its historical balance of effort. Covers the business of journals versus preprints, how metrics distort what counts as a good researcher, and the concrete ethical rules for using AI to write and review papers.",
     topics: [
@@ -579,7 +579,7 @@ const lectures: Lecture[] = [
     chapter: 23,
     title: "The Meaning of Understanding in AI-Laden Science",
     speaker: "Siyu Yao & André Curtis-Trudel",
-    affiliation: "Shanghai Jiao Tong University; U. of Cincinnati",
+    affiliation: "Shanghai Jiao Tong University & University of Cincinnati",
     description:
       "A philosophical examination of what it means to understand a physical phenomenon when an AI does the heavy lifting, disentangling explanation from understanding and surfacing the “illusions of understanding” AI can introduce. Introduces pragmatic understanding and the notion of pursuitworthiness for deciding which AI-generated hypotheses are worth scarce time and compute.",
     topics: [
@@ -636,7 +636,7 @@ const lectures: Lecture[] = [
     chapter: 15,
     title: "Reinforcement Learning Fundamentals",
     speaker: "Carol Cuesta-Lazaro",
-    affiliation: "Institute for Advanced Study at Princeton / Flatiron Institute",
+    affiliation: "Institute for Advanced Study / Flatiron Institute",
     description:
       "Builds the mathematical foundations of reinforcement learning from the ground up, for problems where an agent must act in a dynamic environment rather than learn from a static dataset. Derives the REINFORCE algorithm via the log-derivative trick, covers variance reduction and the policy-gradient/Actor-Critic/Q-learning landscape, and shows how classical RL powers modern LLMs through RLHF and RLVR.",
     topics: [
@@ -664,7 +664,7 @@ const lectures: Lecture[] = [
     chapter: 16,
     title: "Reinforcement Learning Applications",
     speaker: "Carol Cuesta-Lazaro",
-    affiliation: "Institute for Advanced Study at Princeton / Flatiron Institute",
+    affiliation: "Institute for Advanced Study / Flatiron Institute",
     description:
       "A hands-on tutorial implementing reinforcement learning on a concrete example: training an agent to safely land a lunar module. Builds policy-gradient methods from REINFORCE through reward-to-go and baselines to a full Actor-Critic architecture, comparing their sample efficiency and connecting these control algorithms to reasoning in Large Language Models.",
     topics: [
@@ -1119,7 +1119,7 @@ const spring2027: SeasonSession[] = [
     date: "Feb 1",
     topic: "Resilient AI at the Space Edge / Radiation-Tolerant Machine Learning",
     speaker: "Javier Duarte",
-    affiliation: "UC San Diego",
+    affiliation: "University of California, San Diego",
   },
 ];
 
