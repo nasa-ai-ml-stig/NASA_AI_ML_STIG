@@ -833,6 +833,7 @@ const lectures: Lecture[] = [
       "Text generation, retrieval embeddings, and intrinsic versus extrinsic evaluation",
       "Hands-on calculation of token likelihoods and perplexity with OLMo",
     ],
+    youtube: "AhABtavwHnM",
     links: [
       {
         label: "View Slides (PDF)",
@@ -1065,6 +1066,10 @@ const fall2026: SeasonSession[] = [
     speaker: "Josh Nguyen",
     affiliation: "University of Pennsylvania",
     links: [
+      {
+        label: "Watch Recording",
+        href: "https://youtu.be/AhABtavwHnM",
+      },
       {
         label: "View Slides (PDF)",
         href: `${BASE_PATH}/Resources/Lecture29_Josh_Nguyen/Transformers_Attention_and_Pretraining_STIG.pdf`,
