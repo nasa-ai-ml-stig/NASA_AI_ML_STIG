@@ -1088,14 +1088,39 @@ const fall2026: SeasonSession[] = [
       },
     ],
   },
-  { date: "Oct 26", topic: "Retrieval and memory (RAG and beyond)" },
-  { date: "Nov 2", topic: "Tool use and MCP" },
-  { date: "Nov 9", topic: "Skills for domains", speaker: "Kelle Cruz", affiliation: "Hunter College, CUNY" },
+  { date: "Oct 26", topic: "Retrieval and memory (RAG and beyond)", speaker: "Kartheik Iyer", affiliation: "University of Hawaii at Manoa" },
+  { date: "Nov 2", topic: "Skills and benchmarks", speaker: "Tousif Islam", affiliation: "University of Texas at Austin" },
+  { date: "Nov 9", topic: "Tool use, MCP", speaker: "Dan Gause & Adele Plunkett", affiliation: "NRAO" },
   { date: "Nov 16", topic: "Multi-agent systems and orchestration", speaker: "Boris Bolliet", affiliation: "University of Cambridge" },
   { date: "Nov 23", topic: "No meeting", noMeeting: true },
   { date: "Nov 30", topic: "Ethics and challenges of agentic AI", speaker: "Paul Ginsparg", affiliation: "Cornell University" },
   { date: "Dec 7", topic: "Mechanistic interpretability" },
-  { date: "Dec 14", topic: "Town hall & interactive session" },
+  { date: "Dec 14", topic: "Algorithm-hardware co-design" },
+  { date: "Dec 21", topic: "No meeting", noMeeting: true },
+  { date: "Dec 28", topic: "No meeting", noMeeting: true },
+];
+
+const spring2027: SeasonSession[] = [
+  { date: "Jan 4", topic: "No meeting", noMeeting: true },
+  {
+    date: "Jan 11",
+    topic: "Town hall & interactive session",
+    speaker: "Ben Wandelt & Dragan Huterer",
+    affiliation: "Johns Hopkins University & University of Michigan",
+  },
+  { date: "Jan 18", topic: "No meeting", noMeeting: true },
+  {
+    date: "Jan 25",
+    topic: "Edge AI and fast ML for scientific detectors",
+    speaker: "Phil Harris",
+    affiliation: "MIT",
+  },
+  {
+    date: "Feb 1",
+    topic: "Resilient AI at the Space Edge / Radiation-Tolerant Machine Learning",
+    speaker: "Javier Duarte",
+    affiliation: "UC San Diego",
+  },
 ];
 
 /* ------------------------------------------------------------------ */
@@ -1440,45 +1465,54 @@ function SeasonSection() {
           </div>
         </div>
 
-        {/* Fall 2026 schedule */}
-        <div className="rounded-2xl bg-deep overflow-hidden shadow-[var(--shadow-card-hover)]">
-          <div className="px-6 md:px-8 py-6 border-b border-white/10">
-            <span className="font-display text-xs font-bold uppercase tracking-[0.18em] text-green-light">Fall 2026 schedule</span>
-            <h3 className="font-display text-xl md:text-2xl font-bold text-white mt-1">Mondays · 4:00 PM ET · Remote</h3>
-          </div>
-          <ul className="divide-y divide-white/5">
-            {fall2026.map((s) => (
-              <li key={s.date} className={`flex items-center gap-4 md:gap-6 px-6 md:px-8 py-3.5 ${s.noMeeting ? "opacity-45" : ""}`}>
-                <span className="w-16 shrink-0 font-display text-sm font-semibold text-green-light">{s.date}</span>
-                <div className="min-w-0 flex-1">
-                  <span className={`font-display font-semibold leading-snug ${s.noMeeting ? "italic font-normal text-white/70" : "text-white"}`}>{s.topic}</span>
-                  {!s.noMeeting && (
-                    <span className={`block text-sm mt-0.5 ${s.speaker ? "text-white/55" : "text-white/40 italic"}`}>
-                      {s.speaker ? `${s.speaker}${s.affiliation ? ` · ${s.affiliation}` : ""}` : "Speaker to be announced"}
-                    </span>
-                  )}
-                  {s.links && s.links.length > 0 && (
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {s.links.map((l, i) => (
-                        <a
-                          key={i}
-                          href={l.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 rounded-full border border-green-light/25 bg-green-light/10 px-3 py-1 text-xs font-display font-semibold text-green-light hover:bg-green-light/20 hover:text-white transition-colors"
-                        >
-                          {l.label}
-                          <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
-                        </a>
-                      ))}
+        {/* Fall 2026 + winter–spring 2027 schedules */}
+        <div className="space-y-8">
+          {(
+            [
+              { label: "Fall 2026 schedule", sessions: fall2026 },
+              { label: "Winter–spring 2027 schedule", sessions: spring2027 },
+            ] as const
+          ).map((block) => (
+            <div key={block.label} className="rounded-2xl bg-deep overflow-hidden shadow-[var(--shadow-card-hover)]">
+              <div className="px-6 md:px-8 py-6 border-b border-white/10">
+                <span className="font-display text-xs font-bold uppercase tracking-[0.18em] text-green-light">{block.label}</span>
+                <h3 className="font-display text-xl md:text-2xl font-bold text-white mt-1">Mondays · 4:00 PM ET · Remote</h3>
+              </div>
+              <ul className="divide-y divide-white/5">
+                {block.sessions.map((s) => (
+                  <li key={s.date} className={`flex items-center gap-4 md:gap-6 px-6 md:px-8 py-3.5 ${s.noMeeting ? "opacity-45" : ""}`}>
+                    <span className="w-16 shrink-0 font-display text-sm font-semibold text-green-light">{s.date}</span>
+                    <div className="min-w-0 flex-1">
+                      <span className={`font-display font-semibold leading-snug ${s.noMeeting ? "italic font-normal text-white/70" : "text-white"}`}>{s.topic}</span>
+                      {!s.noMeeting && (
+                        <span className={`block text-sm mt-0.5 ${s.speaker ? "text-white/55" : "text-white/40 italic"}`}>
+                          {s.speaker ? `${s.speaker}${s.affiliation ? ` · ${s.affiliation}` : ""}` : "Speaker to be announced"}
+                        </span>
+                      )}
+                      {s.links && s.links.length > 0 && (
+                        <div className="flex flex-wrap gap-2 mt-2">
+                          {s.links.map((l, i) => (
+                            <a
+                              key={i}
+                              href={l.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 rounded-full border border-green-light/25 bg-green-light/10 px-3 py-1 text-xs font-display font-semibold text-green-light hover:bg-green-light/20 hover:text-white transition-colors"
+                            >
+                              {l.label}
+                              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                            </a>
+                          ))}
+                        </div>
+                      )}
                     </div>
-                  )}
-                </div>
-              </li>
-            ))}
-          </ul>
-          <div className="px-6 md:px-8 py-5 bg-white/[0.03] border-t border-white/10 text-sm text-white/55">
-            Winter–spring 2027 — instrumentation, policy, surveys &amp; missions, and town halls —
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+          <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-6 md:px-8 py-5 text-sm text-white/55">
+            Later winter–spring sessions — policy, surveys &amp; missions, and more —
             will be announced as speakers confirm.
           </div>
         </div>
