@@ -862,6 +862,7 @@ const lectures: Lecture[] = [
       "What fine-tuning versus reinforcement learning each generalize to",
       "Self-learning: models that invent and solve their own practice problems",
     ],
+    youtube: "2MV-c-y2De8",
     links: [
       {
         label: "View Slides (PDF)",
@@ -1087,6 +1088,10 @@ const fall2026: SeasonSession[] = [
     speaker: "Moritz Münchmeyer",
     affiliation: "University of Wisconsin–Madison",
     links: [
+      {
+        label: "Watch Recording",
+        href: "https://youtu.be/2MV-c-y2De8",
+      },
       {
         label: "View Slides (PDF)",
         href: `${BASE_PATH}/Resources/Lecture30_Moritz_Munchmeyer/Finetuning_Reinforcement_Learning_and_SelfLearning_STIG.pdf`,
