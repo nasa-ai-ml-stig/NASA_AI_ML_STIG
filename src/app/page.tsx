@@ -870,6 +870,35 @@ const lectures: Lecture[] = [
       },
     ],
   },
+  {
+    number: 31,
+    title: "Citation Grounding, RAG, and Making LLMs Show Their Sources",
+    speaker: "Kartheik Iyer",
+    affiliation: "University of Hawaii at Manoa",
+    description:
+      "How do you trust what a language model tells you? Starts from the problem that models are tuned for fluency, not factual accuracy, and frames grounding in three steps: feed the model context, get it to attribute its claims to that context, and verify the citations are real. Introduces embeddings and the interpretable latent space of the astronomy literature behind Pathfinder, then surveys how to make retrieval work at scale. The companion notebook builds a grounded question-answering pipeline on the Pathfinder corpus, with quote-level citation checks, retrieval benchmarks, and grounded extraction with LangExtract.",
+    topics: [
+      "Why language models hallucinate references, and why fluency is not evidence",
+      "Three steps of grounding: context, attribution, and verification",
+      "Embeddings and embedding spaces as a map of the astronomy literature",
+      "Pathfinder: semantic search and grounded Q&A over astronomy papers",
+      "Retrieval-augmented generation (RAG) with labeled sources",
+      "Structured citations with verbatim quotes, checked by code and an LLM judge",
+      "Improving retrieval: query expansion, HyDE, reranking, and hybrid search",
+      "Grounded extraction with LangExtract, and agentic RAG setups",
+    ],
+    youtube: "rKUtqHWd154",
+    links: [
+      {
+        label: "View Slides (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture31_Kartheik_Iyer/Citation_Grounding_and_RAG_STIG.pdf`,
+      },
+      {
+        label: "View/Download Notebook on GitHub",
+        href: `${GITHUB_BASE}/Resources/Lecture31_Kartheik_Iyer/Grounding_LLM_Answers_STIG.ipynb`,
+      },
+    ],
+  },
 ];
 
 interface ScheduleRow {
@@ -925,6 +954,7 @@ const schedule: ScheduleEntry[] = [
   { week: 28, date: "Sep 28", topic: "Hands-on session II: agentic coding and research tools", speaker: "Serat Saad, OSU" },
   { week: 29, date: "Oct 5", topic: "Transformers, attention, and pre-training", speaker: "Josh Nguyen, U. of Pennsylvania" },
   { week: 30, date: "Oct 19", topic: "Finetuning and reinforcement learning", speaker: "Moritz Münchmeyer, U. of Wisconsin–Madison" },
+  { week: 31, date: "Oct 26", topic: "Retrieval and memory (RAG and beyond)", speaker: "Kartheik Iyer, U. of Hawaii at Manoa" },
 ];
 
 interface LeadershipPerson {
@@ -1098,7 +1128,26 @@ const fall2026: SeasonSession[] = [
       },
     ],
   },
-  { date: "Oct 26", topic: "Retrieval and memory (RAG and beyond)", speaker: "Kartheik Iyer", affiliation: "University of Hawaii at Manoa" },
+  {
+    date: "Oct 26",
+    topic: "Retrieval and memory (RAG and beyond)",
+    speaker: "Kartheik Iyer",
+    affiliation: "University of Hawaii at Manoa",
+    links: [
+      {
+        label: "Watch Recording",
+        href: "https://youtu.be/rKUtqHWd154",
+      },
+      {
+        label: "View Slides (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture31_Kartheik_Iyer/Citation_Grounding_and_RAG_STIG.pdf`,
+      },
+      {
+        label: "View/Download Notebook on GitHub",
+        href: `${GITHUB_BASE}/Resources/Lecture31_Kartheik_Iyer/Grounding_LLM_Answers_STIG.ipynb`,
+      },
+    ],
+  },
   { date: "Nov 2", topic: "Skills and benchmarks", speaker: "Tousif Islam", affiliation: "University of Texas at Austin" },
   { date: "Nov 9", topic: "Tool use, MCP", speaker: "Dan Gause & Adele Plunkett", affiliation: "NRAO" },
   { date: "Nov 16", topic: "Multi-agent systems and orchestration", speaker: "Boris Bolliet", affiliation: "University of Cambridge" },
