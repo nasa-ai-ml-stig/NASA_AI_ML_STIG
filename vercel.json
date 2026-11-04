@@ -7,6 +7,14 @@
       "permanent": true
     }
   ],
+  "rewrites": [
+    { "source": "/Resources/Lecture2_Yuan-Sen_Ting/STIG_Lecture2_Slides/:slide(\\d+)", "destination": "/Resources/Lecture2_Yuan-Sen_Ting/STIG_Lecture2_Slides/index" },
+    { "source": "/Resources/Lecture2_Yuan-Sen_Ting/STIG_Lecture2_Slides/presenter/:slide(\\d+)", "destination": "/Resources/Lecture2_Yuan-Sen_Ting/STIG_Lecture2_Slides/index" },
+    { "source": "/Resources/Lecture3_Yuan-Sen_Ting/STIG_Lecture3_Slides/:slide(\\d+)", "destination": "/Resources/Lecture3_Yuan-Sen_Ting/STIG_Lecture3_Slides/index" },
+    { "source": "/Resources/Lecture3_Yuan-Sen_Ting/STIG_Lecture3_Slides/presenter/:slide(\\d+)", "destination": "/Resources/Lecture3_Yuan-Sen_Ting/STIG_Lecture3_Slides/index" },
+    { "source": "/Resources/Lecture5_Yuan-Sen_Ting/STIG_Lecture5_Slides/:slide(\\d+)", "destination": "/Resources/Lecture5_Yuan-Sen_Ting/STIG_Lecture5_Slides/index" },
+    { "source": "/Resources/Lecture5_Yuan-Sen_Ting/STIG_Lecture5_Slides/presenter/:slide(\\d+)", "destination": "/Resources/Lecture5_Yuan-Sen_Ting/STIG_Lecture5_Slides/index" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
