@@ -74,12 +74,12 @@ const lectures: Lecture[] = [
     youtube: "Zh44bOt_mbE",
     links: [
       {
-        label: "View/Download on GitHub",
+        label: "View/Download Notebook on GitHub",
         href: `${GITHUB_BASE}/Resources/Lecture2_Yuan-Sen_Ting/LLM_API_Basics_STIG.ipynb`,
       },
       {
         label: "View Slides",
-        href: `${BASE_PATH}/Resources/Lecture2_Yuan-Sen_Ting/STIG_Lecture2_Slides/`,
+        href: `${BASE_PATH}/Resources/Lecture2_Yuan-Sen_Ting/LLM_API_Basics_Slides_STIG/`,
       },
     ],
     attribution: {
@@ -110,12 +110,12 @@ const lectures: Lecture[] = [
     youtube: "eic_kIll-ts",
     links: [
       {
-        label: "View/Download on GitHub",
+        label: "View/Download Notebook on GitHub",
         href: `${GITHUB_BASE}/Resources/Lecture3_Yuan-Sen_Ting/LLM_Function_Tools_RAG_STIG.ipynb`,
       },
       {
         label: "View Slides",
-        href: `${BASE_PATH}/Resources/Lecture3_Yuan-Sen_Ting/STIG_Lecture3_Slides/`,
+        href: `${BASE_PATH}/Resources/Lecture3_Yuan-Sen_Ting/LLM_Function_Tools_RAG_Slides_STIG/`,
       },
     ],
     attribution: {
@@ -173,12 +173,12 @@ const lectures: Lecture[] = [
     youtube: "ttKtiG6-V5U",
     links: [
       {
-        label: "View/Download on GitHub",
+        label: "View/Download Notebook on GitHub",
         href: `${GITHUB_BASE}/Resources/Lecture5_Yuan-Sen_Ting/LLM_MCP_STIG.ipynb`,
       },
       {
         label: "View Slides",
-        href: `${BASE_PATH}/Resources/Lecture5_Yuan-Sen_Ting/STIG_Lecture5_Slides/`,
+        href: `${BASE_PATH}/Resources/Lecture5_Yuan-Sen_Ting/LLM_MCP_Slides_STIG/`,
       },
     ],
     attribution: {

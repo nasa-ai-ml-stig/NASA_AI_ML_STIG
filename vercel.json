@@ -15,7 +15,21 @@
       "has": [{ "type": "host", "value": "www.ai4astro.org" }],
       "destination": "https://ai4astro.org/:path*",
       "permanent": true
-    }
+    },
+    { "source": "/Resources/Lecture2_Yuan-Sen_Ting/STIG_Lecture2_Slides", "destination": "/Resources/Lecture2_Yuan-Sen_Ting/LLM_API_Basics_Slides_STIG", "permanent": true },
+    { "source": "/Resources/Lecture2_Yuan-Sen_Ting/STIG_Lecture2_Slides/:path*", "destination": "/Resources/Lecture2_Yuan-Sen_Ting/LLM_API_Basics_Slides_STIG/:path*", "permanent": true },
+    { "source": "/Resources/Lecture3_Yuan-Sen_Ting/STIG_Lecture3_Slides", "destination": "/Resources/Lecture3_Yuan-Sen_Ting/LLM_Function_Tools_RAG_Slides_STIG", "permanent": true },
+    { "source": "/Resources/Lecture3_Yuan-Sen_Ting/STIG_Lecture3_Slides/:path*", "destination": "/Resources/Lecture3_Yuan-Sen_Ting/LLM_Function_Tools_RAG_Slides_STIG/:path*", "permanent": true },
+    { "source": "/Resources/Lecture5_Yuan-Sen_Ting/STIG_Lecture5_Slides", "destination": "/Resources/Lecture5_Yuan-Sen_Ting/LLM_MCP_Slides_STIG", "permanent": true },
+    { "source": "/Resources/Lecture5_Yuan-Sen_Ting/STIG_Lecture5_Slides/:path*", "destination": "/Resources/Lecture5_Yuan-Sen_Ting/LLM_MCP_Slides_STIG/:path*", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/Resources/Lecture2_Yuan-Sen_Ting/LLM_API_Basics_Slides_STIG/:slide(\\d+)", "destination": "/Resources/Lecture2_Yuan-Sen_Ting/LLM_API_Basics_Slides_STIG/index" },
+    { "source": "/Resources/Lecture2_Yuan-Sen_Ting/LLM_API_Basics_Slides_STIG/presenter/:slide(\\d+)", "destination": "/Resources/Lecture2_Yuan-Sen_Ting/LLM_API_Basics_Slides_STIG/index" },
+    { "source": "/Resources/Lecture3_Yuan-Sen_Ting/LLM_Function_Tools_RAG_Slides_STIG/:slide(\\d+)", "destination": "/Resources/Lecture3_Yuan-Sen_Ting/LLM_Function_Tools_RAG_Slides_STIG/index" },
+    { "source": "/Resources/Lecture3_Yuan-Sen_Ting/LLM_Function_Tools_RAG_Slides_STIG/presenter/:slide(\\d+)", "destination": "/Resources/Lecture3_Yuan-Sen_Ting/LLM_Function_Tools_RAG_Slides_STIG/index" },
+    { "source": "/Resources/Lecture5_Yuan-Sen_Ting/LLM_MCP_Slides_STIG/:slide(\\d+)", "destination": "/Resources/Lecture5_Yuan-Sen_Ting/LLM_MCP_Slides_STIG/index" },
+    { "source": "/Resources/Lecture5_Yuan-Sen_Ting/LLM_MCP_Slides_STIG/presenter/:slide(\\d+)", "destination": "/Resources/Lecture5_Yuan-Sen_Ting/LLM_MCP_Slides_STIG/index" }
   ],
   "headers": [
     {
