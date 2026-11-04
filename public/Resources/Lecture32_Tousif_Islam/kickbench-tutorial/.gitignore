@@ -1,0 +1,14 @@
+# Run folders made by make_run.py
+runs/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# KickBench: the hidden test set and anything derived from it stay private
+kickbench/private/*.npz
+kickbench/private/*.npy
+kickbench/agentic_works/
+kickbench/kickbench_public/
+hidden_predictions.npy

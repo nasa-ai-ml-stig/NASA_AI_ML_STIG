@@ -9,6 +9,9 @@ import React, { useState, useEffect } from "react";
 const GITHUB_BASE =
   "https://github.com/nasa-ai-ml-stig/NASA_AI_ML_STIG/blob/main/public";
 
+const GITHUB_TREE =
+  "https://github.com/nasa-ai-ml-stig/NASA_AI_ML_STIG/tree/main/public";
+
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 interface Lecture {
@@ -21,7 +24,7 @@ interface Lecture {
   topics: string[];
   youtube?: string;
   links: { label: string; href: string }[];
-  attribution?: { text: string; href: string; doi?: { label: string; href: string } };
+  attribution?: { prefix?: string; text: string; href: string; doi?: { label: string; href: string } };
 }
 
 const lectures: Lecture[] = [
@@ -899,6 +902,39 @@ const lectures: Lecture[] = [
       },
     ],
   },
+  {
+    number: 32,
+    title: "Skills and Benchmarks: Teaching an Agent Your Domain, and Measuring Whether It Learned",
+    speaker: "Tousif Islam",
+    affiliation: "University of Texas at Austin",
+    description:
+      "How do you teach an AI agent what your field knows, and how do you find out whether it learned? A skill is expert know-how written as a plain SKILL.md file that an agent loads only when the task needs it; a benchmark is an exam the agent cannot mark, with a task, hidden data, and a grader written as code that reruns the agent's solution. Surveys how astronomy and physics already measure agents, then draws on four gravitational-wave projects (gwBenchmarks, GWAgent, gwSkills, gwTeukolsky). Two demonstrations center on the black hole kick: KickBench tests three Claude models on modeling the recoil speed of merging black holes, and KickSkills and KickAgent test whether written expert knowledge and a validation-constrained loop improve accuracy and physical behavior. The companion tutorial is a starter kit for running the same agent with and without a skill on your own problem.",
+    topics: [
+      "Why benchmarks drive the LLM field, and how astronomy already measures agents",
+      "Three kinds of markdown files: AGENTS.md, SKILL.md, and TASK.md with a grader",
+      "Terminal-based science benchmarks versus static and coding benchmarks",
+      "Agents in gravitational-wave physics: gwBenchmarks, GWAgent, gwSkills, gwTeukolsky",
+      "KickBench: a black hole kick benchmark scored by rerunning the agent's code",
+      "Writing a skill, and the firewall between knowledge and an answer key",
+      "KickAgent: a validation-constrained loop with grouped cross-validation and physics checks",
+      "A 20-minute starter kit to test whether a skill helps on your own problem",
+    ],
+    links: [
+      {
+        label: "View Slides",
+        href: `${BASE_PATH}/Resources/Lecture32_Tousif_Islam/Skills_and_Benchmarks_Slides/index`,
+      },
+      {
+        label: "Browse Tutorial Code on GitHub",
+        href: `${GITHUB_TREE}/Resources/Lecture32_Tousif_Islam/kickbench-tutorial`,
+      },
+    ],
+    attribution: {
+      prefix: "Tutorial by Tousif Islam (MIT License), copied from the original repository",
+      text: "github.com/tousifislam/kickbench-tutorial",
+      href: "https://github.com/tousifislam/kickbench-tutorial",
+    },
+  },
 ];
 
 interface ScheduleRow {
@@ -955,6 +991,7 @@ const schedule: ScheduleEntry[] = [
   { week: 29, date: "Oct 5", topic: "Transformers, attention, and pre-training", speaker: "Josh Nguyen, U. of Pennsylvania" },
   { week: 30, date: "Oct 19", topic: "Finetuning and reinforcement learning", speaker: "Moritz Münchmeyer, U. of Wisconsin–Madison" },
   { week: 31, date: "Oct 26", topic: "Retrieval and memory (RAG and beyond)", speaker: "Kartheik Iyer, U. of Hawaii at Manoa" },
+  { week: 32, date: "Nov 2", topic: "Skills and benchmarks", speaker: "Tousif Islam, U. of Texas at Austin" },
 ];
 
 interface LeadershipPerson {
@@ -1148,7 +1185,26 @@ const fall2026: SeasonSession[] = [
       },
     ],
   },
-  { date: "Nov 2", topic: "Skills and benchmarks", speaker: "Tousif Islam", affiliation: "University of Texas at Austin" },
+  {
+    date: "Nov 2",
+    topic: "Skills and benchmarks",
+    speaker: "Tousif Islam",
+    affiliation: "University of Texas at Austin",
+    links: [
+      {
+        label: "View Slides",
+        href: `${BASE_PATH}/Resources/Lecture32_Tousif_Islam/Skills_and_Benchmarks_Slides/index`,
+      },
+      {
+        label: "Browse Tutorial Code on GitHub",
+        href: `${GITHUB_TREE}/Resources/Lecture32_Tousif_Islam/kickbench-tutorial`,
+      },
+      {
+        label: "Original Tutorial Repository",
+        href: "https://github.com/tousifislam/kickbench-tutorial",
+      },
+    ],
+  },
   { date: "Nov 9", topic: "Tool use, MCP", speaker: "Dan Gause & Adele Plunkett", affiliation: "NRAO" },
   { date: "Nov 16", topic: "Multi-agent systems and orchestration", speaker: "Boris Bolliet", affiliation: "University of Cambridge" },
   { date: "Nov 23", topic: "No meeting", noMeeting: true },
@@ -1792,7 +1848,7 @@ function LectureCard({ row, lecture, playing, onPlay }: { row: ScheduleRow; lect
           )}
           {lecture.attribution && (
             <p className="text-xs text-ink/40 mt-4 italic">
-              Adapted from{" "}
+              {lecture.attribution.prefix ?? "Adapted from"}{" "}
               <a href={lecture.attribution.href} target="_blank" rel="noopener noreferrer" className="text-teal hover:text-teal-dark">{lecture.attribution.text}</a>
               {lecture.attribution.doi && (<>{" "}·{" "}<a href={lecture.attribution.doi.href} target="_blank" rel="noopener noreferrer" className="text-teal hover:text-teal-dark">{lecture.attribution.doi.label}</a></>)}
             </p>
