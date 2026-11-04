@@ -1,6 +1,16 @@
 {
   "redirects": [
     {
+      "source": "/Resources/Lecture1_Jesse_Thaler/The_Future_of_AI_and_MPS_Workshop.pdf",
+      "destination": "/Resources/Lecture1_Jesse_Thaler/The_Future_of_AI_and_MPS_STIG.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/Resources/Lecture4_Francisco_Villaescusa-Navarro/AI_Agents_and_Multi-Agent_Systems.pdf",
+      "destination": "/Resources/Lecture4_Francisco_Villaescusa-Navarro/AI_Agents_Multi-Agent_Systems_STIG.pdf",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.ai4astro.org" }],
       "destination": "https://ai4astro.org/:path*",

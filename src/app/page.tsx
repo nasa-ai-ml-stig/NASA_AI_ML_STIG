@@ -47,7 +47,7 @@ const lectures: Lecture[] = [
     links: [
       {
         label: "View Slides (PDF)",
-        href: `${BASE_PATH}/Resources/Lecture1_Jesse_Thaler/The_Future_of_AI_and_MPS_Workshop.pdf`,
+        href: `${BASE_PATH}/Resources/Lecture1_Jesse_Thaler/The_Future_of_AI_and_MPS_STIG.pdf`,
       },
       {
         label: "Read White Paper on arXiv",
@@ -146,12 +146,12 @@ const lectures: Lecture[] = [
     youtube: "7hY8wLjGSdg",
     links: [
       {
-        label: "View/Download on GitHub",
+        label: "View/Download Notebook on GitHub",
         href: `${GITHUB_BASE}/Resources/Lecture4_Francisco_Villaescusa-Navarro/AI_Agents_Multi-Agent_Systems_STIG.ipynb`,
       },
       {
         label: "View Slides (PDF)",
-        href: `${BASE_PATH}/Resources/Lecture4_Francisco_Villaescusa-Navarro/AI_Agents_and_Multi-Agent_Systems.pdf`,
+        href: `${BASE_PATH}/Resources/Lecture4_Francisco_Villaescusa-Navarro/AI_Agents_Multi-Agent_Systems_STIG.pdf`,
       },
     ],
   },
@@ -477,8 +477,8 @@ const lectures: Lecture[] = [
     youtube: "JNHNpjTA0q0",
     links: [
       {
-        label: "View/Download Slides on GitHub",
-        href: `${GITHUB_BASE}/Resources/Lecture16_Duo_Xu/Diffusion_Models_STIG.pdf`,
+        label: "View Slides (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture16_Duo_Xu/Diffusion_Models_STIG.pdf`,
       },
       {
         label: "View/Download Galaxy Tutorial Notebook on GitHub",
@@ -509,8 +509,8 @@ const lectures: Lecture[] = [
     youtube: "eAiXMEVAMHc",
     links: [
       {
-        label: "View/Download Slides (PDF)",
-        href: `${GITHUB_BASE}/Resources/Lecture17_Tomasz_Rozanski/Flow_Matching_STIG.pdf`,
+        label: "View Slides (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture17_Tomasz_Rozanski/Flow_Matching_STIG.pdf`,
       },
       {
         label: "View/Download Single Population Notebook on GitHub",
@@ -541,8 +541,8 @@ const lectures: Lecture[] = [
     youtube: "bArKnWB92o8",
     links: [
       {
-        label: "View/Download Slides (PDF)",
-        href: `${GITHUB_BASE}/Resources/Lecture18_Tomasz_Rozanski/Simulation_Based_Inference_STIG.pdf`,
+        label: "View Slides (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture18_Tomasz_Rozanski/Simulation_Based_Inference_STIG.pdf`,
       },
       {
         label: "View/Download Ball Throw Notebook on GitHub",
@@ -922,11 +922,11 @@ const lectures: Lecture[] = [
     links: [
       {
         label: "View Slides",
-        href: `${BASE_PATH}/Resources/Lecture32_Tousif_Islam/Skills_and_Benchmarks_Slides/index`,
+        href: `${BASE_PATH}/Resources/Lecture32_Tousif_Islam/Skills_and_Benchmarks_Slides_STIG/index`,
       },
       {
         label: "Browse Tutorial Code on GitHub",
-        href: `${GITHUB_TREE}/Resources/Lecture32_Tousif_Islam/kickbench-tutorial`,
+        href: `${GITHUB_TREE}/Resources/Lecture32_Tousif_Islam/KickBench_Tutorial_STIG`,
       },
     ],
     attribution: {
@@ -1193,11 +1193,11 @@ const fall2026: SeasonSession[] = [
     links: [
       {
         label: "View Slides",
-        href: `${BASE_PATH}/Resources/Lecture32_Tousif_Islam/Skills_and_Benchmarks_Slides/index`,
+        href: `${BASE_PATH}/Resources/Lecture32_Tousif_Islam/Skills_and_Benchmarks_Slides_STIG/index`,
       },
       {
         label: "Browse Tutorial Code on GitHub",
-        href: `${GITHUB_TREE}/Resources/Lecture32_Tousif_Islam/kickbench-tutorial`,
+        href: `${GITHUB_TREE}/Resources/Lecture32_Tousif_Islam/KickBench_Tutorial_STIG`,
       },
       {
         label: "Original Tutorial Repository",
