@@ -919,6 +919,7 @@ const lectures: Lecture[] = [
       "KickAgent: a validation-constrained loop with grouped cross-validation and physics checks",
       "A 20-minute starter kit to test whether a skill helps on your own problem",
     ],
+    youtube: "V_iq-S0mk3c",
     links: [
       {
         label: "View Slides",
@@ -1191,6 +1192,10 @@ const fall2026: SeasonSession[] = [
     speaker: "Tousif Islam",
     affiliation: "University of Texas at Austin",
     links: [
+      {
+        label: "Watch Recording",
+        href: "https://youtu.be/V_iq-S0mk3c",
+      },
       {
         label: "View Slides",
         href: `${BASE_PATH}/Resources/Lecture32_Tousif_Islam/Skills_and_Benchmarks_Slides_STIG/index`,
