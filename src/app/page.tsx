@@ -1067,7 +1067,7 @@ const seasonThemes: SeasonTheme[] = [
   {
     title: "Agentic AI: Fundamentals & Applications",
     when: "Fall 2026",
-    body: "The core track of the fall: what LLM agents are and how to work with them — hands-on sessions on agentic coding and research tools, transformers and pre-training, finetuning and reinforcement learning, retrieval and memory, tool use and MCP, multi-agent orchestration, and ethics.",
+    body: "The core track of the fall: what LLM agents are and how to work with them — hands-on sessions on agentic coding and research tools, transformers and pre-training, finetuning and reinforcement learning, retrieval and memory, tool use and MCP, multi-agent orchestration, large-scale agentic workflows, interpretability, and ethics.",
     icon: "M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.456-2.456L14.25 6l1.035-.259a3.375 3.375 0 002.456-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z",
   },
   {
@@ -1250,8 +1250,8 @@ const fall2026: SeasonSession[] = [
   { date: "Nov 16", topic: "Multi-agent systems and orchestration", speaker: "Boris Bolliet", affiliation: "University of Cambridge" },
   { date: "Nov 23", topic: "No meeting", noMeeting: true },
   { date: "Nov 30", topic: "Ethics and challenges of agentic AI", speaker: "Paul Ginsparg", affiliation: "Cornell University" },
-  { date: "Dec 7", topic: "Topic to be announced" },
-  { date: "Dec 14", topic: "Topic to be announced", speaker: "Nesar Ramachandra", affiliation: "Argonne National Laboratory" },
+  { date: "Dec 7", topic: "Mechanistic interpretability" },
+  { date: "Dec 14", topic: "Large-scale agentic workflows in astronomy", speaker: "Nesar Ramachandra", affiliation: "Argonne National Laboratory" },
   { date: "Dec 21", topic: "No meeting", noMeeting: true },
   { date: "Dec 28", topic: "No meeting", noMeeting: true },
 ];
