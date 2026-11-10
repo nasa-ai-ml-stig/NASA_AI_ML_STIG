@@ -936,6 +936,30 @@ const lectures: Lecture[] = [
       href: "https://github.com/tousifislam/kickbench-tutorial",
     },
   },
+  {
+    number: 33,
+    title: "MCP by Example: Conceiving, Building, and Testing MANNA",
+    speaker: "Dan Gause & Adele Plunkett",
+    affiliation: "National Radio Astronomy Observatory",
+    description:
+      "An introduction to the Model Context Protocol (MCP) built around one working server. Explains what MCP is (an open standard connecting AI applications to external systems through hosts, clients, servers, and a transport) and when a server is worth building instead of letting an agent call an API directly: services that need authentication, have thin or outdated documentation, or depend on expert context, which describes most astronomical data archives. A live demo builds a server with the Python SDK and FastMCP. The talk then presents MANNA (MCP Architecture for NOIRLab, NRAO, and Additional Archives), whose 15 tools mirror an astronomer's archive workflow across Astro Data Lab, ALMA, CADC, ESO, Gaia, and SDSS. A three-part evaluation of tool use, value added, and archive-note accuracy shows that MANNA makes agent tasks faster for every model tested, lowers their cost, and raises accuracy most for smaller models.",
+    topics: [
+      "What MCP is: hosts, clients, servers, and the transport between them",
+      "Server features: tools, resources, and prompts",
+      "When an MCP server beats direct API access: authentication, sparse documentation, expert context",
+      "Building a server with the Python SDK, FastMCP, and MCP Inspector (live demo)",
+      "MANNA: archive discovery, table inspection, querying, and async jobs across IVOA archives",
+      "Evaluating an MCP server: tool-use tiers, value added, and auditing archive notes",
+      "Speed, cost, and accuracy with and without MANNA for open-weight and Claude models",
+      "MCP versus skills files: determinism, validation, and server-side compute",
+    ],
+    links: [
+      {
+        label: "View Slides (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture33_Dan_Gause_Adele_Plunkett/MCP_by_Example_MANNA_STIG.pdf`,
+      },
+    ],
+  },
 ];
 
 interface ScheduleRow {
@@ -993,6 +1017,7 @@ const schedule: ScheduleEntry[] = [
   { week: 30, date: "Oct 19", topic: "Finetuning and reinforcement learning", speaker: "Moritz Münchmeyer, U. of Wisconsin–Madison" },
   { week: 31, date: "Oct 26", topic: "Retrieval and memory (RAG and beyond)", speaker: "Kartheik Iyer, U. of Hawaii at Manoa" },
   { week: 32, date: "Nov 2", topic: "Skills and benchmarks", speaker: "Tousif Islam, U. of Texas at Austin" },
+  { week: 33, date: "Nov 9", topic: "Tool use, MCP", speaker: "Dan Gause & Adele Plunkett, National Radio Astronomy Observatory" },
 ];
 
 interface LeadershipPerson {
@@ -1042,7 +1067,7 @@ const seasonThemes: SeasonTheme[] = [
   {
     title: "Agentic AI: Fundamentals & Applications",
     when: "Fall 2026",
-    body: "The core track of the fall: what LLM agents are and how to work with them — hands-on sessions on agentic coding and research tools, transformers and pre-training, finetuning and reinforcement learning, retrieval and memory, tool use and MCP, multi-agent orchestration, interpretability, and ethics.",
+    body: "The core track of the fall: what LLM agents are and how to work with them — hands-on sessions on agentic coding and research tools, transformers and pre-training, finetuning and reinforcement learning, retrieval and memory, tool use and MCP, multi-agent orchestration, and ethics.",
     icon: "M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.456-2.456L14.25 6l1.035-.259a3.375 3.375 0 002.456-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z",
   },
   {
@@ -1210,12 +1235,23 @@ const fall2026: SeasonSession[] = [
       },
     ],
   },
-  { date: "Nov 9", topic: "Tool use, MCP", speaker: "Dan Gause & Adele Plunkett", affiliation: "NRAO" },
+  {
+    date: "Nov 9",
+    topic: "Tool use, MCP",
+    speaker: "Dan Gause & Adele Plunkett",
+    affiliation: "National Radio Astronomy Observatory",
+    links: [
+      {
+        label: "View Slides (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture33_Dan_Gause_Adele_Plunkett/MCP_by_Example_MANNA_STIG.pdf`,
+      },
+    ],
+  },
   { date: "Nov 16", topic: "Multi-agent systems and orchestration", speaker: "Boris Bolliet", affiliation: "University of Cambridge" },
   { date: "Nov 23", topic: "No meeting", noMeeting: true },
   { date: "Nov 30", topic: "Ethics and challenges of agentic AI", speaker: "Paul Ginsparg", affiliation: "Cornell University" },
-  { date: "Dec 7", topic: "Mechanistic interpretability" },
-  { date: "Dec 14", topic: "Algorithm-hardware co-design" },
+  { date: "Dec 7", topic: "Topic to be announced" },
+  { date: "Dec 14", topic: "Topic to be announced", speaker: "Nesar Ramachandra", affiliation: "Argonne National Laboratory" },
   { date: "Dec 21", topic: "No meeting", noMeeting: true },
   { date: "Dec 28", topic: "No meeting", noMeeting: true },
 ];
