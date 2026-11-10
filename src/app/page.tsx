@@ -94,7 +94,7 @@ const lectures: Lecture[] = [
   {
     number: 3,
     chapter: 18,
-    title: "RAG & Function Tools",
+    title: "Retrieval-Augmented Generation (RAG) & Function Tools",
     speaker: "Yuan-Sen Ting",
     affiliation: "The Ohio State University",
     description:
@@ -875,7 +875,7 @@ const lectures: Lecture[] = [
   },
   {
     number: 31,
-    title: "Citation Grounding, RAG, and Making LLMs Show Their Sources",
+    title: "Citation Grounding, Retrieval-Augmented Generation (RAG), and Making LLMs Show Their Sources",
     speaker: "Kartheik Iyer",
     affiliation: "University of Hawaii at Manoa",
     description:
@@ -938,7 +938,7 @@ const lectures: Lecture[] = [
   },
   {
     number: 33,
-    title: "Tool Use and MCP",
+    title: "Tool Use and Model Context Protocol (MCP)",
     speaker: "Dan Gause & Adele Plunkett",
     affiliation: "National Radio Astronomy Observatory",
     description:
@@ -979,7 +979,7 @@ const schedule: ScheduleEntry[] = [
   { week: 1, date: "Nov 3", topic: "Overview", speaker: "Jesse Thaler, MIT" },
   { module: "Module 1: Large Language Models as Autonomous Agents" },
   { week: 2, date: "Nov 10", topic: "LLM API Basics", speaker: "Yuan-Sen Ting, OSU" },
-  { week: 3, date: "Nov 17", topic: "RAG & Function Tools", speaker: "Yuan-Sen Ting, OSU" },
+  { week: 3, date: "Nov 17", topic: "Retrieval-Augmented Generation (RAG) & Function Tools", speaker: "Yuan-Sen Ting, OSU" },
   { week: 4, date: "Nov 24", topic: "LLM as Agent", speaker: "Francisco Villaescusa-Navarro, Flatiron" },
   { week: 5, date: "Dec 8", topic: "Model Context Protocol (MCP)", speaker: "Yuan-Sen Ting, OSU" },
   { module: "Module 2: Deep Learning Frameworks" },
@@ -1015,9 +1015,9 @@ const schedule: ScheduleEntry[] = [
   { week: 28, date: "Sep 28", topic: "Hands-on session II: agentic coding and research tools", speaker: "Serat Saad, OSU" },
   { week: 29, date: "Oct 5", topic: "Transformers, attention, and pre-training", speaker: "Josh Nguyen, U. of Pennsylvania" },
   { week: 30, date: "Oct 19", topic: "Finetuning and reinforcement learning", speaker: "Moritz Münchmeyer, U. of Wisconsin–Madison" },
-  { week: 31, date: "Oct 26", topic: "Retrieval and memory (RAG and beyond)", speaker: "Kartheik Iyer, U. of Hawaii at Manoa" },
+  { week: 31, date: "Oct 26", topic: "Retrieval and memory: retrieval-augmented generation (RAG) and beyond", speaker: "Kartheik Iyer, U. of Hawaii at Manoa" },
   { week: 32, date: "Nov 2", topic: "Skills and benchmarks", speaker: "Tousif Islam, U. of Texas at Austin" },
-  { week: 33, date: "Nov 9", topic: "Tool use, MCP", speaker: "Dan Gause & Adele Plunkett, National Radio Astronomy Observatory" },
+  { week: 33, date: "Nov 9", topic: "Tool use, Model Context Protocol (MCP)", speaker: "Dan Gause & Adele Plunkett, National Radio Astronomy Observatory" },
 ];
 
 interface LeadershipPerson {
@@ -1067,7 +1067,7 @@ const seasonThemes: SeasonTheme[] = [
   {
     title: "Agentic AI: Fundamentals & Applications",
     when: "Fall 2026",
-    body: "The core track of the fall: what LLM agents are and how to work with them — hands-on sessions on agentic coding and research tools, transformers and pre-training, finetuning and reinforcement learning, retrieval and memory, tool use and MCP, multi-agent orchestration, large-scale agentic workflows, and ethics.",
+    body: "The core track of the fall: what LLM agents are and how to work with them — hands-on sessions on agentic coding and research tools, transformers and pre-training, finetuning and reinforcement learning, retrieval and memory, tool use and the Model Context Protocol (MCP), multi-agent orchestration, large-scale agentic workflows, and ethics.",
     icon: "M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.456-2.456L14.25 6l1.035-.259a3.375 3.375 0 002.456-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z",
   },
   {
@@ -1193,7 +1193,7 @@ const fall2026: SeasonSession[] = [
   },
   {
     date: "Oct 26",
-    topic: "Retrieval and memory (RAG and beyond)",
+    topic: "Retrieval and memory: retrieval-augmented generation (RAG) and beyond",
     speaker: "Kartheik Iyer",
     affiliation: "University of Hawaii at Manoa",
     links: [
@@ -1237,7 +1237,7 @@ const fall2026: SeasonSession[] = [
   },
   {
     date: "Nov 9",
-    topic: "Tool use, MCP",
+    topic: "Tool use, Model Context Protocol (MCP)",
     speaker: "Dan Gause & Adele Plunkett",
     affiliation: "National Radio Astronomy Observatory",
     links: [
