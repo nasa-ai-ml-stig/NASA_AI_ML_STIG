@@ -6,9 +6,10 @@
 
 - [`Tool_Use_for_Astronomy_STIG.pdf`](Tool_Use_for_Astronomy_STIG.pdf): slides for Part 1 (Adele
   Plunkett). Why archive access is the bottleneck for multiwavelength science, tool use and MCP for
-  astronomy in brief, and what the STABLE team has built and learned.
+  astronomy in brief, and what a summer team at the NSF–Simons CosmicAI Institute (STABLE) has
+  built and learned.
 - [`MCP_by_Example_MANNA_STIG.pdf`](MCP_by_Example_MANNA_STIG.pdf): slides for Part 2 (Dan Gause).
-  MCP by example: conceiving, building, and testing MANNA, an MCP server for astronomy archives.
+  MCP by example: conceiving, building, and testing an MCP server for astronomy archives (MANNA).
 - [`MCP_Server_Tutorial_STIG/`](MCP_Server_Tutorial_STIG/): local copy of the live demo from
   Part 2. Use Claude Code to create, inspect, and run a minimal MCP server whose one tool resolves
   extragalactic object names through NED. Start with

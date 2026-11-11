@@ -641,14 +641,14 @@ const lectures: Lecture[] = [
     speaker: "Carol Cuesta-Lazaro",
     affiliation: "Institute for Advanced Study / Flatiron Institute",
     description:
-      "Builds the mathematical foundations of reinforcement learning from the ground up, for problems where an agent must act in a dynamic environment rather than learn from a static dataset. Derives the REINFORCE algorithm via the log-derivative trick, covers variance reduction and the policy-gradient/Actor-Critic/Q-learning landscape, and shows how classical RL powers modern LLMs through RLHF and RLVR.",
+      "Builds the mathematical foundations of reinforcement learning from the ground up, for problems where an agent must act in a dynamic environment rather than learn from a static dataset. Derives the REINFORCE algorithm via the log-derivative trick, covers variance reduction and the policy-gradient/Actor-Critic/Q-learning landscape, and shows how classical reinforcement learning powers modern LLMs through learning from human feedback (RLHF) and from verifiable rewards (RLVR).",
     topics: [
-      "How RL differs from supervised learning: data distribution and rewards",
+      "How reinforcement learning differs from supervised learning: data distribution and rewards",
       "Core components: agent, environment, state, action, policy, reward",
       "Deriving REINFORCE with the log-derivative trick",
       "Variance reduction: baselines, reward-to-go, discounting, exploration",
       "Policy gradients vs. Actor-Critic vs. Q-learning",
-      "RLHF and RLVR behind modern Large Language Models",
+      "Learning from human feedback (RLHF) and verifiable rewards (RLVR) behind modern Large Language Models",
     ],
     youtube: "lrAt3rPPznI",
     links: [
@@ -721,14 +721,14 @@ const lectures: Lecture[] = [
     affiliation:
       "Science Data Officer for Policy, Chief Science Data Office, NASA Headquarters",
     description:
-      "A slide-based overview of NASA's Open-Source Science Initiative: what open science means in practice, how the federal Year of Open Science led into NASA's policy and infrastructure work, and how SMD is supporting open publications, data, software, meetings, tools, training, and community capacity through SPD-41a, core data services, open-source software funding, TOPS, and the NASA Open Science Certificate.",
+      "A slide-based overview of NASA's Open-Source Science Initiative: what open science means in practice, how the federal Year of Open Science led into NASA's policy and infrastructure work, and how NASA's Science Mission Directorate is supporting open publications, data, software, meetings, tools, training, and community capacity through its scientific information policy (SPD-41a), core data services, open-source software funding, the Transform to Open Science (TOPS) program, and the NASA Open Science Certificate.",
     topics: [
       "Open science as shared research products and processes with security, privacy, reproducibility, and equity",
       "The 2023 Year of Open Science and its federal open-science goals",
       "NASA's implementation model: policy and governance, core services, incentives, and community",
-      "SPD-41a requirements for open publications, research data, software, mission data, and meetings",
+      "NASA's scientific information policy (SPD-41a): open publications, research data, software, mission data, and meetings",
       "Science Explorer, Science Discovery Engine, and cross-division data and computing infrastructure",
-      "TOPS, Open Science 101 modules, and the NASA Open Science Certificate",
+      "Transform to Open Science (TOPS), Open Science 101 modules, and the NASA Open Science Certificate",
     ],
     youtube: "3yR7ttMsJok",
     links: [
@@ -908,15 +908,15 @@ const lectures: Lecture[] = [
     speaker: "Tousif Islam",
     affiliation: "University of Texas at Austin",
     description:
-      "How do you teach an AI agent what your field knows, and how do you find out whether it learned? A skill is expert know-how written as a plain SKILL.md file that an agent loads only when the task needs it; a benchmark is an exam the agent cannot mark, with a task, hidden data, and a grader written as code that reruns the agent's solution. Surveys how astronomy and physics already measure agents, then draws on four gravitational-wave projects (gwBenchmarks, GWAgent, gwSkills, gwTeukolsky). Two demonstrations center on the black hole kick: KickBench tests three Claude models on modeling the recoil speed of merging black holes, and KickSkills and KickAgent test whether written expert knowledge and a validation-constrained loop improve accuracy and physical behavior. The companion tutorial is a starter kit for running the same agent with and without a skill on your own problem.",
+      "How do you teach an AI agent what your field knows, and how do you find out whether it learned? A skill is expert know-how written as a plain SKILL.md file that an agent loads only when the task needs it; a benchmark is an exam the agent cannot mark, with a task, hidden data, and a grader written as code that reruns the agent's solution. Surveys how astronomy and physics already measure agents, then draws on four of the speaker's gravitational-wave projects on benchmarks, agents, and skills. Two demonstrations center on the black hole kick, the recoil of the remnant when two black holes merge: the first tests three Claude models on modeling its speed, and the second tests whether written expert knowledge and a loop that validates each candidate model improve accuracy and physical behavior. The companion tutorial is a starter kit for running the same agent with and without a skill on your own problem.",
     topics: [
       "Why benchmarks drive the LLM field, and how astronomy already measures agents",
       "Three kinds of markdown files: AGENTS.md, SKILL.md, and TASK.md with a grader",
       "Terminal-based science benchmarks versus static and coding benchmarks",
-      "Agents in gravitational-wave physics: gwBenchmarks, GWAgent, gwSkills, gwTeukolsky",
-      "KickBench: a black hole kick benchmark scored by rerunning the agent's code",
+      "Agents in gravitational-wave physics: four projects on benchmarks, agents, and skills",
+      "A black hole kick benchmark scored by rerunning the agent's code",
       "Writing a skill, and the firewall between knowledge and an answer key",
-      "KickAgent: a validation-constrained loop with grouped cross-validation and physics checks",
+      "A validation loop: a fixed tool scores each candidate model with cross-validation and physics checks",
       "A 20-minute starter kit to test whether a skill helps on your own problem",
     ],
     youtube: "V_iq-S0mk3c",
@@ -942,16 +942,16 @@ const lectures: Lecture[] = [
     speaker: "Dan Gause & Adele Plunkett",
     affiliation: "National Radio Astronomy Observatory",
     description:
-      "A two-part session on giving AI agents good tools for astronomical data. In Part 1, Adele Plunkett explains why archive access is the bottleneck: multiwavelength science spans many archives that are open to everyone but each have their own schemas, column names, units, and query services. Tool-using agents can carry some of that fluency, if they are given the right tools and measured on how well they use them. She surveys the fast-growing field of astronomy agents and MCP servers and presents STABLE, a CosmicAI summer team that built the AstroDataBench benchmark, the MANNA server, and the QUASAR assistant. In Part 2, Dan Gause introduces the Model Context Protocol (MCP), an open standard connecting AI applications to external systems through hosts, clients, servers, and a transport, and explains when a server is worth building instead of letting an agent call an API directly: services that need authentication, have thin or outdated documentation, or depend on expert context, which describes most astronomical data archives. A live demo builds a server with the Python SDK and FastMCP. He then presents MANNA (MCP Architecture for NOIRLab, NRAO, and Additional Archives), whose 15 tools mirror an astronomer's archive workflow across Astro Data Lab, ALMA, CADC, ESO, Gaia, and SDSS. A three-part evaluation of tool use, value added, and archive-note accuracy shows that MANNA makes agent tasks faster for every model tested, lowers their cost, and raises accuracy most for smaller models. The companion tutorial reruns the live demo: use Claude Code to create, inspect, and run a minimal MCP server that resolves galaxy names through NED.",
+      "A two-part session on giving AI agents good tools for astronomical data. In Part 1, Adele Plunkett explains why archive access is the bottleneck: the archives are open to everyone, but each has its own schemas, units, and query services. She surveys astronomy agents and Model Context Protocol (MCP) servers, and shares what an NSF–Simons summer team built: a benchmark for finding archive data, an archive server, and a research assistant. In Part 2, Dan Gause explains when an MCP server is worth building instead of letting an agent call an API directly, and builds one live in Python with an AI coding assistant. He then presents the team's archive server and shows that it makes agent tasks faster and cheaper for every model tested, with the largest accuracy gains for smaller models. The companion tutorial reruns the live demo.",
     topics: [
       "Why archive access is the bottleneck for multiwavelength science",
-      "Astronomy agents and MCP servers, and what the STABLE team built: AstroDataBench, MANNA, and QUASAR",
+      "Astronomy agents and MCP servers, and what one summer team built: a benchmark, a server, and an assistant",
       "What MCP is: hosts, clients, and servers, with tools, resources, and prompts",
       "When an MCP server beats direct API access: authentication, sparse documentation, expert context",
-      "Building a server with the Python SDK, FastMCP, and MCP Inspector (live demo)",
-      "MANNA: archive discovery, table inspection, querying, and async jobs across IVOA archives",
-      "Evaluating MANNA: tool use, value added, and archive-note accuracy, with speed and cost per model",
-      "MCP versus skills files: determinism, validation, and server-side compute",
+      "Building a small server in Python and testing it before an agent uses it (live demo)",
+      "An archive server whose tools follow an astronomer's workflow: find data, inspect tables, run queries",
+      "Evaluating the server: tool use, speed, cost, and accuracy with and without it",
+      "MCP servers versus skill files: reliability, validation, and computing on the server",
     ],
     links: [
       {
@@ -1021,7 +1021,7 @@ const schedule: ScheduleEntry[] = [
   { module: "Module 8: AI Opportunities at NASA" },
   { week: 21, date: "May 4", topic: "NASA ASTRA Initiative", speaker: "Peter Kurczynski & Swara Ravindranath, NASA GSFC" },
   { week: 24, date: "Jun 1", topic: "From Text to Spaceship", speaker: "Ryan McClelland, NASA GSFC" },
-  { week: 25, date: "Jun 29, 4 pm ET", topic: "Open Science and AI at NASA", speaker: "Steve Crawford, NASA SMD OCSDO" },
+  { week: 25, date: "Jun 29, 4 pm ET", topic: "Open Science and AI at NASA", speaker: "Steve Crawford, Chief Science Data Office, NASA Headquarters" },
   { module: "Module 9: Agentic AI (2026–2027 Series)" },
   { week: 26, date: "Sep 14", topic: "Foundations of LLM agents and state of the art", speaker: "Josh Speagle, U. of Toronto" },
   { week: 27, date: "Sep 21", topic: "Hands-on session I: agentic coding and research tools", speaker: "Christopher Stubbs, Harvard" },
