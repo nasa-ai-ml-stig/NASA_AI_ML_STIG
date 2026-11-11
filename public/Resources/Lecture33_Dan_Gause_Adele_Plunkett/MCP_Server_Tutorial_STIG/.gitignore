@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.DS_Store
+*.key
+
+# Tutorial build area: keep the folder, ignore what readers build in it
+workspace/*
+!workspace/.gitkeep

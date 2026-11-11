@@ -1,0 +1,5 @@
+Using the mcp-server-dev plugin, build a minimal local stdio MCP server in Python with FastMCP, managed by uv, in a single file (server.py) in the current directory. The server should be named "ned".
+
+One tool: resolve_object(name) — resolves an extragalactic object name to J2000 coordinates using the NED ObjectLookup service. Also return the NED object type code and the redshift.
+
+Use httpx with a 10s timeout. Write a strong docstring that says the tool covers extragalactic objects only. No tests; keep it short and readable (this is for a tutorial).

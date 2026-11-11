@@ -942,23 +942,36 @@ const lectures: Lecture[] = [
     speaker: "Dan Gause & Adele Plunkett",
     affiliation: "National Radio Astronomy Observatory",
     description:
-      "An introduction to the Model Context Protocol (MCP) built around one working server. Explains what MCP is (an open standard connecting AI applications to external systems through hosts, clients, servers, and a transport) and when a server is worth building instead of letting an agent call an API directly: services that need authentication, have thin or outdated documentation, or depend on expert context, which describes most astronomical data archives. A live demo builds a server with the Python SDK and FastMCP. The talk then presents MANNA (MCP Architecture for NOIRLab, NRAO, and Additional Archives), whose 15 tools mirror an astronomer's archive workflow across Astro Data Lab, ALMA, CADC, ESO, Gaia, and SDSS. A three-part evaluation of tool use, value added, and archive-note accuracy shows that MANNA makes agent tasks faster for every model tested, lowers their cost, and raises accuracy most for smaller models.",
+      "A two-part session on giving AI agents good tools for astronomical data. In Part 1, Adele Plunkett explains why archive access is the bottleneck: multiwavelength science spans many archives that are open to everyone but each have their own schemas, column names, units, and query services. Tool-using agents can carry some of that fluency, if they are given the right tools and measured on how well they use them. She surveys the fast-growing field of astronomy agents and MCP servers and presents STABLE, a CosmicAI summer team that built the AstroDataBench benchmark, the MANNA server, and the QUASAR assistant. In Part 2, Dan Gause introduces the Model Context Protocol (MCP), an open standard connecting AI applications to external systems through hosts, clients, servers, and a transport, and explains when a server is worth building instead of letting an agent call an API directly: services that need authentication, have thin or outdated documentation, or depend on expert context, which describes most astronomical data archives. A live demo builds a server with the Python SDK and FastMCP. He then presents MANNA (MCP Architecture for NOIRLab, NRAO, and Additional Archives), whose 15 tools mirror an astronomer's archive workflow across Astro Data Lab, ALMA, CADC, ESO, Gaia, and SDSS. A three-part evaluation of tool use, value added, and archive-note accuracy shows that MANNA makes agent tasks faster for every model tested, lowers their cost, and raises accuracy most for smaller models. The companion tutorial reruns the live demo: use Claude Code to create, inspect, and run a minimal MCP server that resolves galaxy names through NED.",
     topics: [
-      "What MCP is: hosts, clients, servers, and the transport between them",
-      "Server features: tools, resources, and prompts",
+      "Why archive access is the bottleneck for multiwavelength science",
+      "Astronomy agents and MCP servers, and what the STABLE team built: AstroDataBench, MANNA, and QUASAR",
+      "What MCP is: hosts, clients, and servers, with tools, resources, and prompts",
       "When an MCP server beats direct API access: authentication, sparse documentation, expert context",
       "Building a server with the Python SDK, FastMCP, and MCP Inspector (live demo)",
       "MANNA: archive discovery, table inspection, querying, and async jobs across IVOA archives",
-      "Evaluating an MCP server: tool-use tiers, value added, and auditing archive notes",
-      "Speed, cost, and accuracy with and without MANNA for open-weight and Claude models",
+      "Evaluating MANNA: tool use, value added, and archive-note accuracy, with speed and cost per model",
       "MCP versus skills files: determinism, validation, and server-side compute",
     ],
     links: [
       {
-        label: "View Slides (PDF)",
+        label: "View Part 1 Slides: Tool Use for Astronomy (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture33_Dan_Gause_Adele_Plunkett/Tool_Use_for_Astronomy_STIG.pdf`,
+      },
+      {
+        label: "View Part 2 Slides: MCP by Example (PDF)",
         href: `${BASE_PATH}/Resources/Lecture33_Dan_Gause_Adele_Plunkett/MCP_by_Example_MANNA_STIG.pdf`,
       },
+      {
+        label: "Browse Tutorial Code on GitHub",
+        href: `${GITHUB_TREE}/Resources/Lecture33_Dan_Gause_Adele_Plunkett/MCP_Server_Tutorial_STIG`,
+      },
     ],
+    attribution: {
+      prefix: "Tutorial by Dan Gause, copied from the original repository",
+      text: "github.com/dangause/nasa_aiml_stig_mcp_tutorial",
+      href: "https://github.com/dangause/nasa_aiml_stig_mcp_tutorial",
+    },
   },
 ];
 
@@ -1242,8 +1255,20 @@ const fall2026: SeasonSession[] = [
     affiliation: "National Radio Astronomy Observatory",
     links: [
       {
-        label: "View Slides (PDF)",
+        label: "View Part 1 Slides: Tool Use for Astronomy (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture33_Dan_Gause_Adele_Plunkett/Tool_Use_for_Astronomy_STIG.pdf`,
+      },
+      {
+        label: "View Part 2 Slides: MCP by Example (PDF)",
         href: `${BASE_PATH}/Resources/Lecture33_Dan_Gause_Adele_Plunkett/MCP_by_Example_MANNA_STIG.pdf`,
+      },
+      {
+        label: "Browse Tutorial Code on GitHub",
+        href: `${GITHUB_TREE}/Resources/Lecture33_Dan_Gause_Adele_Plunkett/MCP_Server_Tutorial_STIG`,
+      },
+      {
+        label: "Original Tutorial Repository",
+        href: "https://github.com/dangause/nasa_aiml_stig_mcp_tutorial",
       },
     ],
   },

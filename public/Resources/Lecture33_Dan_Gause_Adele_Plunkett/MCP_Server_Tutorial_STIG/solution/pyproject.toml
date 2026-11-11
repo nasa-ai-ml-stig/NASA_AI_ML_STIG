@@ -1,0 +1,9 @@
+[project]
+name = "ned"
+version = "0.1.0"
+description = "Minimal MCP server that resolves extragalactic object names via NED"
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=4.1.7",
+    "httpx>=0.28.1",
+]
