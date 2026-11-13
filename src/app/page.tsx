@@ -919,7 +919,7 @@ const lectures: Lecture[] = [
       "A validation loop: a fixed tool scores each candidate model with cross-validation and physics checks",
       "A 20-minute starter kit to test whether a skill helps on your own problem",
     ],
-    youtube: "V_iq-S0mk3c",
+    youtube: "o0oLmgKqHjc",
     links: [
       {
         label: "View Slides",
@@ -953,6 +953,7 @@ const lectures: Lecture[] = [
       "Evaluating the server: tool use, speed, cost, and accuracy with and without it",
       "MCP servers versus skill files: reliability, validation, and computing on the server",
     ],
+    youtube: "YF3B72qXaRg",
     links: [
       {
         label: "View Part 1 Slides: Tool Use for Astronomy (PDF)",
@@ -1232,7 +1233,7 @@ const fall2026: SeasonSession[] = [
     links: [
       {
         label: "Watch Recording",
-        href: "https://youtu.be/V_iq-S0mk3c",
+        href: "https://youtu.be/o0oLmgKqHjc",
       },
       {
         label: "View Slides",
@@ -1254,6 +1255,10 @@ const fall2026: SeasonSession[] = [
     speaker: "Dan Gause & Adele Plunkett",
     affiliation: "National Radio Astronomy Observatory",
     links: [
+      {
+        label: "Watch Recording",
+        href: "https://youtu.be/YF3B72qXaRg",
+      },
       {
         label: "View Part 1 Slides: Tool Use for Astronomy (PDF)",
         href: `${BASE_PATH}/Resources/Lecture33_Dan_Gause_Adele_Plunkett/Tool_Use_for_Astronomy_STIG.pdf`,
