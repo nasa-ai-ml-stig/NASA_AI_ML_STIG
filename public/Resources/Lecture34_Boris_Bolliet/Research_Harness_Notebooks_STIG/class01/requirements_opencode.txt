@@ -1,0 +1,12 @@
+# OpenCode notebook (lecture01_opencode.ipynb): versions of the saved run, Python 3.12.
+# On Colab, the first two cells of the notebook install what is missing.
+# Locally: python3.12 -m venv .venv && .venv/bin/pip install -r requirements_opencode.txt,
+# then open the notebook with a Jupyter front end (JupyterLab, VS Code) using this environment.
+# OpenCode itself is a Node.js package, installed by the notebook with npm (Node.js 18 or later):
+#   npm install --prefix opencode opencode-ai@1.19.5
+# With Langfuse keys set, OpenCode loads the plugin @langfuse/opencode-observability-plugin@0.7.0.
+numpy==2.5.4
+scipy==1.18.1
+pandas==3.1.1
+matplotlib==3.11.2
+ipykernel==7.4.0

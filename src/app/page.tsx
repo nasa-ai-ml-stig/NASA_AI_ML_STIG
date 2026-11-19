@@ -974,6 +974,56 @@ const lectures: Lecture[] = [
       href: "https://github.com/dangause/nasa_aiml_stig_mcp_tutorial",
     },
   },
+  {
+    number: 34,
+    title: "Multi-Agent Systems and Orchestration: Building a Research Harness",
+    speaker: "Boris Bolliet",
+    affiliation: "University of Cambridge",
+    description:
+      "What does it take for AI agents to carry out a scientific analysis you can check? A research harness is the software around a language model: it chooses what information each model call receives, runs the code the model writes, controls the order of steps, and records and checks the results. Building your own lets you trace results back to code and sources, decide where computation runs and where data go, add domain tools, and swap models. Covers structured outputs, bounded retries, and tracing with Langfuse, then common ways to organize agents in LangGraph, from a single tool loop to planning and control. Explains how to evaluate a harness with test cases, deliberately planted errors, and cost–performance comparisons, and surveys existing harnesses: CMBAgent, Denario, OpenCode, Skepthical, and CLArXivR. Three companion notebooks give the same Pantheon+ supernova fit of the matter density to a single agent, to CMBAgent, and to OpenCode with a reviewer, and compare their accuracy, calls, time, and cost.",
+    topics: [
+      "What a research harness does, and why to build your own: traceability, control of data, customization, portability",
+      "Model calls, shared state, and structured outputs validated with Pydantic",
+      "Running generated code with bounded attempts, time, and cost",
+      "Tracing model calls, tokens, and cost with Langfuse",
+      "Organizing agents in LangGraph: tool loops, supervisors, parallel workers, propose–critique, self-debugging, planning and control",
+      "Evaluating a harness: test cases, planted errors, and cost versus performance",
+      "Existing research harnesses: CMBAgent, Denario, OpenCode, Skepthical, and CLArXivR",
+      "One Pantheon+ supernova fit, three organizations of agents: accuracy, calls, time, and cost",
+    ],
+    youtube: "wSWI_fTKcss",
+    links: [
+      {
+        label: "View Slides (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture34_Boris_Bolliet/Multi-Agent_Systems_and_Orchestration_Slides_STIG.pdf`,
+      },
+      {
+        label: "View Lecture Notes (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture34_Boris_Bolliet/Multi-Agent_Systems_and_Orchestration_Notes_STIG.pdf`,
+      },
+      {
+        label: "View/Download Single-Agent Notebook on GitHub",
+        href: `${GITHUB_BASE}/Resources/Lecture34_Boris_Bolliet/Research_Harness_Notebooks_STIG/class01/lecture01_single_agent.ipynb`,
+      },
+      {
+        label: "View/Download CMBAgent Notebook on GitHub",
+        href: `${GITHUB_BASE}/Resources/Lecture34_Boris_Bolliet/Research_Harness_Notebooks_STIG/class01/lecture01_cmbagent_lg.ipynb`,
+      },
+      {
+        label: "View/Download OpenCode Notebook on GitHub",
+        href: `${GITHUB_BASE}/Resources/Lecture34_Boris_Bolliet/Research_Harness_Notebooks_STIG/class01/lecture01_opencode.ipynb`,
+      },
+      {
+        label: "Browse All Materials on GitHub (incl. CMBAgent and Pantheon+ Data)",
+        href: `${GITHUB_TREE}/Resources/Lecture34_Boris_Bolliet`,
+      },
+    ],
+    attribution: {
+      prefix: "Slides, notes, and notebooks by Boris Bolliet, copied from the original course page",
+      text: "teaching.borisbolliet.io/mas-2026",
+      href: "https://teaching.borisbolliet.io/mas-2026/lectures/class01/",
+    },
+  },
 ];
 
 interface ScheduleRow {
@@ -1032,6 +1082,7 @@ const schedule: ScheduleEntry[] = [
   { week: 31, date: "Oct 26", topic: "Retrieval and memory: retrieval-augmented generation (RAG) and beyond", speaker: "Kartheik Iyer, U. of Hawaii at Manoa" },
   { week: 32, date: "Nov 2", topic: "Skills and benchmarks", speaker: "Tousif Islam, U. of Texas at Austin" },
   { week: 33, date: "Nov 9", topic: "Tool use, Model Context Protocol (MCP)", speaker: "Dan Gause & Adele Plunkett, National Radio Astronomy Observatory" },
+  { week: 34, date: "Nov 16", topic: "Multi-agent systems and orchestration", speaker: "Boris Bolliet, U. of Cambridge" },
 ];
 
 interface LeadershipPerson {
@@ -1277,7 +1328,34 @@ const fall2026: SeasonSession[] = [
       },
     ],
   },
-  { date: "Nov 16", topic: "Multi-agent systems and orchestration", speaker: "Boris Bolliet", affiliation: "University of Cambridge" },
+  {
+    date: "Nov 16",
+    topic: "Multi-agent systems and orchestration",
+    speaker: "Boris Bolliet",
+    affiliation: "University of Cambridge",
+    links: [
+      {
+        label: "Watch Recording",
+        href: "https://youtu.be/wSWI_fTKcss",
+      },
+      {
+        label: "View Slides (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture34_Boris_Bolliet/Multi-Agent_Systems_and_Orchestration_Slides_STIG.pdf`,
+      },
+      {
+        label: "View Lecture Notes (PDF)",
+        href: `${BASE_PATH}/Resources/Lecture34_Boris_Bolliet/Multi-Agent_Systems_and_Orchestration_Notes_STIG.pdf`,
+      },
+      {
+        label: "Browse Notebooks, CMBAgent, and Data on GitHub",
+        href: `${GITHUB_TREE}/Resources/Lecture34_Boris_Bolliet`,
+      },
+      {
+        label: "Original Course Page",
+        href: "https://teaching.borisbolliet.io/mas-2026/lectures/class01/",
+      },
+    ],
+  },
   { date: "Nov 23", topic: "No meeting", noMeeting: true },
   { date: "Nov 30", topic: "Ethics and challenges of agentic AI", speaker: "Paul Ginsparg", affiliation: "Cornell University" },
   { date: "Dec 7", topic: "Topic to be announced" },

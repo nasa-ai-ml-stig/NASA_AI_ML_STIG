@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cmbagent_lg"
+version = "0.0.1"
+description = "LangGraph re-implementation of cmbagent deep research. Starting point: planner ↔ plan_reviewer propose-critique loop."
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph>=0.2.50",
+    "langchain-core>=0.3",
+    # langfuse's `langfuse.langchain` integration imports the umbrella
+    # `langchain` package at module load — pinning just langchain-core is not
+    # enough.
+    "langchain>=0.3",
+    "langchain-google-genai>=2.0",
+    "pydantic>=2.7",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0",
+    "langfuse>=4.0",
+]
+
+[project.optional-dependencies]
+dev = ["jupyterlab", "ipykernel"]
+# The self_debug escalation node (opt-in) runs a Claude Agent SDK agent.
+escalation = ["claude-agent-sdk>=0.1"]
+# OCR (cmbagent_lg.ocr) uses the Mistral OCR API. Works on both 1.x and the
+# latest 2.x SDK — cmbagent_lg.ocr handles the moved import path (2.x relocated
+# the client to `mistralai.client`).
+ocr = ["mistralai>=1.0"]
+
+[project.scripts]
+cmbagent-lg-cost = "cmbagent_lg.cli:cost_main"
+
+[tool.setuptools.packages.find]
+include = ["cmbagent_lg*"]
+
+[tool.setuptools.package-data]
+# Templates live in each module's own templates/ dir (planning/, self_debug/).
+cmbagent_lg = ["**/templates/*.yaml"]

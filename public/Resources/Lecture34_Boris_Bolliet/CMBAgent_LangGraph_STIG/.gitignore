@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.egg-info/
+.ipynb_checkpoints/
+build/
+dist/
+work_dir/
+runs/
+.DS_Store
+
+.claude/
+evals/engineer_stress/mit_out/
