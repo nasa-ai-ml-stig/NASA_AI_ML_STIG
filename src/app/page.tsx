@@ -78,7 +78,7 @@ const lectures: Lecture[] = [
         href: `${GITHUB_BASE}/Resources/Lecture2_Yuan-Sen_Ting/LLM_API_Basics_STIG.ipynb`,
       },
       {
-        label: "View Slides",
+        label: "View Slides (HTML)",
         href: `${BASE_PATH}/Resources/Lecture2_Yuan-Sen_Ting/LLM_API_Basics_Slides_STIG/`,
       },
     ],
@@ -114,7 +114,7 @@ const lectures: Lecture[] = [
         href: `${GITHUB_BASE}/Resources/Lecture3_Yuan-Sen_Ting/LLM_Function_Tools_RAG_STIG.ipynb`,
       },
       {
-        label: "View Slides",
+        label: "View Slides (HTML)",
         href: `${BASE_PATH}/Resources/Lecture3_Yuan-Sen_Ting/LLM_Function_Tools_RAG_Slides_STIG/`,
       },
     ],
@@ -177,7 +177,7 @@ const lectures: Lecture[] = [
         href: `${GITHUB_BASE}/Resources/Lecture5_Yuan-Sen_Ting/LLM_MCP_STIG.ipynb`,
       },
       {
-        label: "View Slides",
+        label: "View Slides (HTML)",
         href: `${BASE_PATH}/Resources/Lecture5_Yuan-Sen_Ting/LLM_MCP_Slides_STIG/`,
       },
     ],
@@ -316,11 +316,11 @@ const lectures: Lecture[] = [
     youtube: "-J5t3CsgRP8",
     links: [
       {
-        label: "View/Download Notebook 1 on GitHub",
+        label: "View/Download Cora Notebook on GitHub",
         href: `${GITHUB_BASE}/Resources/Lecture10_Tri_Nguyen/GNN_Tutorial1_Cora_STIG.ipynb`,
       },
       {
-        label: "View/Download Notebook 2 on GitHub",
+        label: "View/Download Stellar Streams Notebook on GitHub",
         href: `${GITHUB_BASE}/Resources/Lecture10_Tri_Nguyen/GNN_Tutorial2_Streams_STIG.ipynb`,
       },
       {
@@ -445,7 +445,7 @@ const lectures: Lecture[] = [
     youtube: "8HWQKOJuUkA",
     links: [
       {
-        label: "View Slides",
+        label: "View Slides (HTML)",
         href: "https://gregreen.github.io/presentations/presentations/normalizing_flows_tutorial_2026y03m.html#/",
       },
       {
@@ -621,15 +621,15 @@ const lectures: Lecture[] = [
         href: `${BASE_PATH}/Resources/Lecture21_Peter_Kurczynski_Swara_Ravindranath/ASTRA_Intro_STIG.pdf`,
       },
       {
-        label: "ASTRA Initiative Homepage",
+        label: "Visit ASTRA Initiative Homepage",
         href: "https://science.nasa.gov/astrophysics/programs/cosmic-origins/studies/astra-initiative/",
       },
       {
-        label: "Mission Concepts (PDF)",
+        label: "View ASTRA Mission Concepts (PDF)",
         href: "https://assets.science.nasa.gov/content/dam/science/astro/documents/ASTRA_Web_Update_2026-03-25.pdf",
       },
       {
-        label: "Ad ASTRA Community Workshop (Sept 2026)",
+        label: "Visit Ad ASTRA Community Workshop (Sept 2026)",
         href: "https://conference.ipac.caltech.edu/community2026/",
       },
     ],
@@ -657,7 +657,7 @@ const lectures: Lecture[] = [
         href: `${BASE_PATH}/Resources/Lecture22_Carol_Cuesta-Lazaro/Reinforcement_Learning_Fundamentals_STIG.pdf`,
       },
       {
-        label: "View Handwritten Notes (PDF)",
+        label: "View Notes (PDF)",
         href: `${BASE_PATH}/Resources/Lecture22_Carol_Cuesta-Lazaro/Reinforcement_Learning_Fundamentals_Notes_STIG.pdf`,
       },
     ],
@@ -705,11 +705,11 @@ const lectures: Lecture[] = [
     youtube: "xj4Irl3OFt8",
     links: [
       {
-        label: "Davinci by Celedon Solutions (AI engineering platform)",
+        label: "Visit Davinci (AI engineering platform)",
         href: "https://celedon.solutions/davinci/",
       },
       {
-        label: "Synera (agentic AI for engineering workflows)",
+        label: "Visit Synera (agentic AI for engineering)",
         href: "https://www.synera.io/",
       },
     ],
@@ -737,15 +737,15 @@ const lectures: Lecture[] = [
         href: `${BASE_PATH}/Resources/Lecture25_Steven_Crawford/NASAs_Open_Source_Science_Initiative_STIG.pdf`,
       },
       {
-        label: "NASA Scientific Information Policy",
+        label: "Read NASA Scientific Information Policy",
         href: "https://science.nasa.gov/researchers/science-data/science-information-policy",
       },
       {
-        label: "NASA Open Science Trainings",
+        label: "Visit NASA Open Science Trainings",
         href: "https://science.nasa.gov/open-science/training/",
       },
       {
-        label: "Open Science Federal Portal",
+        label: "Visit Open Science Federal Portal",
         href: "https://open.science.gov/",
       },
     ],
@@ -771,7 +771,7 @@ const lectures: Lecture[] = [
         href: `${BASE_PATH}/Resources/Lecture26_Josh_Speagle/Foundations_of_LLM_Agents_and_State_of_the_Art_STIG.pdf`,
       },
       {
-        label: "View Talk Design Spec (markdown)",
+        label: "View Talk Design Spec (Markdown)",
         href: `${GITHUB_BASE}/Resources/Lecture26_Josh_Speagle/TALK_DESIGN.md`,
       },
     ],
@@ -922,7 +922,7 @@ const lectures: Lecture[] = [
     youtube: "o0oLmgKqHjc",
     links: [
       {
-        label: "View Slides",
+        label: "View Slides (HTML)",
         href: `${BASE_PATH}/Resources/Lecture32_Tousif_Islam/Skills_and_Benchmarks_Slides_STIG/index`,
       },
       {
@@ -956,11 +956,11 @@ const lectures: Lecture[] = [
     youtube: "YF3B72qXaRg",
     links: [
       {
-        label: "View Part 1 Slides: Tool Use for Astronomy (PDF)",
+        label: "View Part 1 Slides (PDF)",
         href: `${BASE_PATH}/Resources/Lecture33_Dan_Gause_Adele_Plunkett/Tool_Use_for_Astronomy_STIG.pdf`,
       },
       {
-        label: "View Part 2 Slides: MCP by Example (PDF)",
+        label: "View Part 2 Slides (PDF)",
         href: `${BASE_PATH}/Resources/Lecture33_Dan_Gause_Adele_Plunkett/MCP_by_Example_MANNA_STIG.pdf`,
       },
       {
@@ -998,7 +998,7 @@ const lectures: Lecture[] = [
         href: `${BASE_PATH}/Resources/Lecture34_Boris_Bolliet/Multi-Agent_Systems_and_Orchestration_Slides_STIG.pdf`,
       },
       {
-        label: "View Lecture Notes (PDF)",
+        label: "View Notes (PDF)",
         href: `${BASE_PATH}/Resources/Lecture34_Boris_Bolliet/Multi-Agent_Systems_and_Orchestration_Notes_STIG.pdf`,
       },
       {
@@ -1014,7 +1014,7 @@ const lectures: Lecture[] = [
         href: `${GITHUB_BASE}/Resources/Lecture34_Boris_Bolliet/Research_Harness_Notebooks_STIG/class01/lecture01_opencode.ipynb`,
       },
       {
-        label: "Browse All Materials on GitHub (incl. CMBAgent and Pantheon+ Data)",
+        label: "Browse All Materials on GitHub",
         href: `${GITHUB_TREE}/Resources/Lecture34_Boris_Bolliet`,
       },
     ],
@@ -1182,7 +1182,7 @@ const fall2026: SeasonSession[] = [
         href: `${BASE_PATH}/Resources/Lecture26_Josh_Speagle/Foundations_of_LLM_Agents_and_State_of_the_Art_STIG.pdf`,
       },
       {
-        label: "View Talk Design Spec (markdown)",
+        label: "View Talk Design Spec (Markdown)",
         href: `${GITHUB_BASE}/Resources/Lecture26_Josh_Speagle/TALK_DESIGN.md`,
       },
     ],
@@ -1287,7 +1287,7 @@ const fall2026: SeasonSession[] = [
         href: "https://youtu.be/o0oLmgKqHjc",
       },
       {
-        label: "View Slides",
+        label: "View Slides (HTML)",
         href: `${BASE_PATH}/Resources/Lecture32_Tousif_Islam/Skills_and_Benchmarks_Slides_STIG/index`,
       },
       {
@@ -1295,7 +1295,7 @@ const fall2026: SeasonSession[] = [
         href: `${GITHUB_TREE}/Resources/Lecture32_Tousif_Islam/KickBench_Tutorial_STIG`,
       },
       {
-        label: "Original Tutorial Repository",
+        label: "View Original Repository",
         href: "https://github.com/tousifislam/kickbench-tutorial",
       },
     ],
@@ -1311,11 +1311,11 @@ const fall2026: SeasonSession[] = [
         href: "https://youtu.be/YF3B72qXaRg",
       },
       {
-        label: "View Part 1 Slides: Tool Use for Astronomy (PDF)",
+        label: "View Part 1 Slides (PDF)",
         href: `${BASE_PATH}/Resources/Lecture33_Dan_Gause_Adele_Plunkett/Tool_Use_for_Astronomy_STIG.pdf`,
       },
       {
-        label: "View Part 2 Slides: MCP by Example (PDF)",
+        label: "View Part 2 Slides (PDF)",
         href: `${BASE_PATH}/Resources/Lecture33_Dan_Gause_Adele_Plunkett/MCP_by_Example_MANNA_STIG.pdf`,
       },
       {
@@ -1323,7 +1323,7 @@ const fall2026: SeasonSession[] = [
         href: `${GITHUB_TREE}/Resources/Lecture33_Dan_Gause_Adele_Plunkett/MCP_Server_Tutorial_STIG`,
       },
       {
-        label: "Original Tutorial Repository",
+        label: "View Original Repository",
         href: "https://github.com/dangause/nasa_aiml_stig_mcp_tutorial",
       },
     ],
@@ -1343,15 +1343,27 @@ const fall2026: SeasonSession[] = [
         href: `${BASE_PATH}/Resources/Lecture34_Boris_Bolliet/Multi-Agent_Systems_and_Orchestration_Slides_STIG.pdf`,
       },
       {
-        label: "View Lecture Notes (PDF)",
+        label: "View Notes (PDF)",
         href: `${BASE_PATH}/Resources/Lecture34_Boris_Bolliet/Multi-Agent_Systems_and_Orchestration_Notes_STIG.pdf`,
       },
       {
-        label: "Browse Notebooks, CMBAgent, and Data on GitHub",
+        label: "View/Download Single-Agent Notebook on GitHub",
+        href: `${GITHUB_BASE}/Resources/Lecture34_Boris_Bolliet/Research_Harness_Notebooks_STIG/class01/lecture01_single_agent.ipynb`,
+      },
+      {
+        label: "View/Download CMBAgent Notebook on GitHub",
+        href: `${GITHUB_BASE}/Resources/Lecture34_Boris_Bolliet/Research_Harness_Notebooks_STIG/class01/lecture01_cmbagent_lg.ipynb`,
+      },
+      {
+        label: "View/Download OpenCode Notebook on GitHub",
+        href: `${GITHUB_BASE}/Resources/Lecture34_Boris_Bolliet/Research_Harness_Notebooks_STIG/class01/lecture01_opencode.ipynb`,
+      },
+      {
+        label: "Browse All Materials on GitHub",
         href: `${GITHUB_TREE}/Resources/Lecture34_Boris_Bolliet`,
       },
       {
-        label: "Original Course Page",
+        label: "View Original Course Page",
         href: "https://teaching.borisbolliet.io/mas-2026/lectures/class01/",
       },
     ],
