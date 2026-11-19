@@ -1358,8 +1358,8 @@ const fall2026: SeasonSession[] = [
   },
   { date: "Nov 23", topic: "No meeting", noMeeting: true },
   { date: "Nov 30", topic: "Ethics and challenges of agentic AI", speaker: "Paul Ginsparg", affiliation: "Cornell University" },
-  { date: "Dec 7", topic: "Topic to be announced" },
-  { date: "Dec 14", topic: "Large-scale agentic workflows in astronomy", speaker: "Nesar Ramachandra", affiliation: "Argonne National Laboratory" },
+  { date: "Dec 7", topic: "Cowboy Science with AI — Move fast, break things", speaker: "Nesar Ramachandra", affiliation: "Argonne National Laboratory" },
+  { date: "Dec 14", topic: "AI Doomsday", speaker: "Scott Aaronson", affiliation: "University of Texas at Austin" },
   { date: "Dec 21", topic: "No meeting", noMeeting: true },
   { date: "Dec 28", topic: "No meeting", noMeeting: true },
 ];
