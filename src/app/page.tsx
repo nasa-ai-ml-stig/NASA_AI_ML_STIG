@@ -991,7 +991,7 @@ const lectures: Lecture[] = [
       "Existing research harnesses: CMBAgent, Denario, OpenCode, Skepthical, and CLArXivR",
       "One Pantheon+ supernova fit, three organizations of agents: accuracy, calls, time, and cost",
     ],
-    youtube: "wSWI_fTKcss",
+    youtube: "t_j26b1SHUY",
     links: [
       {
         label: "View Slides (PDF)",
@@ -1336,7 +1336,7 @@ const fall2026: SeasonSession[] = [
     links: [
       {
         label: "Watch Recording",
-        href: "https://youtu.be/wSWI_fTKcss",
+        href: "https://youtu.be/t_j26b1SHUY",
       },
       {
         label: "View Slides (PDF)",
