@@ -1369,7 +1369,7 @@ const fall2026: SeasonSession[] = [
     ],
   },
   { date: "Nov 23", topic: "No meeting", noMeeting: true },
-  { date: "Nov 30", topic: "Discovery, Dysfunction, and Dystopia", speaker: "Paul Ginsparg", affiliation: "Cornell University" },
+  { date: "Nov 30", topic: "Discovery, Drudgery, or Dystopia?", speaker: "Paul Ginsparg", affiliation: "Cornell University" },
   { date: "Dec 7", topic: "Cowboy Science with AI — Move fast, break things", speaker: "Nesar Ramachandra", affiliation: "Argonne National Laboratory" },
   { date: "Dec 14", topic: "AI Doomsday", speaker: "Scott Aaronson", affiliation: "University of Texas at Austin" },
   { date: "Dec 21", topic: "No meeting", noMeeting: true },
